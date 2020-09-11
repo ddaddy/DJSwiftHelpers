@@ -12,7 +12,7 @@ public
 extension UIApplication {
     
     /**
-     @brief returns the top most ViewController regardless if embeded in a navigation stack or not
+     Returns the top most ViewController regardless if embeded in a navigation stack or not
      */
     class func getTopViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
 
@@ -28,6 +28,9 @@ extension UIApplication {
         return base
     }
     
+    /**
+     Display an alert regardless of what's on the screen
+     */
     class func displayGlobalAlert(title:String, message:String, completion: (() -> Void)? = nil) {
         
         let ac = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
@@ -41,7 +44,7 @@ extension UIApplication {
     }
     
     /**
-     * Dismiss back to the root view controller
+     Dismiss back to the root view controller
      */
     class func dismisstoRoot(animated:Bool, completion:(() -> Void)? = nil) {
         
@@ -55,20 +58,5 @@ extension UIApplication {
         
         // We have views on top of the rootViewController
         self.shared.keyWindow?.rootViewController?.dismiss(animated: animated, completion: completion)
-    }
-}
-
-public
-extension UIWindow {
-    
-    /**
-     Fetches the key window
-     */
-    static var key: UIWindow? {
-        if #available(iOS 13, *) {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }
-        } else {
-            return UIApplication.shared.keyWindow
-        }
     }
 }

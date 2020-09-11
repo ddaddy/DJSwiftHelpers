@@ -17,6 +17,7 @@
 		620F6A4A250BBC4B00B10032 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A49250BBC4B00B10032 /* UIImage.swift */; };
 		620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4B250BBCD700B10032 /* UIViewController.swift */; };
 		620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
+		620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4F250BC1E400B10032 /* UIWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		620F6A49250BBC4B00B10032 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		620F6A4B250BBCD700B10032 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		620F6A4F250BC1E400B10032 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				620F6A49250BBC4B00B10032 /* UIImage.swift */,
 				620F6A33250BB78200B10032 /* UIStackView.swift */,
 				620F6A4B250BBCD700B10032 /* UIViewController.swift */,
+				620F6A4F250BC1E400B10032 /* UIWindow.swift */,
 				620F6A4D250BBCE900B10032 /* UserDefaults.swift */,
 			);
 			path = Helpers;
@@ -174,6 +177,7 @@
 				620F6A46250BBC1800B10032 /* UIApplication.swift in Sources */,
 				620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */,
 				620F6A3B250BB78200B10032 /* UIColor.swift in Sources */,
+				620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */,
 				620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */,
 				620F6A4A250BBC4B00B10032 /* UIImage.swift in Sources */,
 			);
