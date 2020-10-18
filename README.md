@@ -167,7 +167,7 @@ addBackground(color: UIColor)
 Displays a `UIAlertController` message with an "Ok" cancel button
 
 ```swift
-displayAlert(title:String, message:String)
+displayAlert(title:String?, message:String?)
 ```
 
 ### UIWindow

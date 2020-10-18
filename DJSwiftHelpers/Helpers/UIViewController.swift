@@ -14,7 +14,7 @@ extension UIViewController {
     /**
      Displays a `UIAlertController` with an "Ok" cancel button
      */
-    func displayAlert(title:String, message:String) {
+    func displayAlert(title:String?, message:String?) {
         
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction.init(title: "Ok", style: .cancel, handler: nil))
