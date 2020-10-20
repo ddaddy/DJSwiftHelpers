@@ -169,6 +169,9 @@ Displays a `UIAlertController` message with an "Ok" cancel button
 ```swift
 displayAlert(title:String?, message:String?)
 ```
+```swift
+displayAlert(title:String?, message:String?, buttonAction:((UIAlertAction)->())?)
+```
 
 ### UIWindow
 Fetche the key window
