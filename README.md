@@ -47,6 +47,32 @@ Split an `Array` into multiple arrays of size
 chunked(into size: Int) -> [[Element]]
 ```
 
+### Date
+Adds additional seconds or minutes to a `Date`
+
+```swift
+adding(seconds: Int) -> Date
+```
+
+```swift
+adding(minutes: Int) -> Date
+```
+
+Converts an iso8601 string with or without milliseconds `2020-11-11T11:39:00Z` ro `2020-11-11T11:39:00.000Z`
+
+```swift
+var iso8601: String
+```
+```swift
+var iso8601withFractionalSeconds: String
+```
+```swift
+var iso8601: Date?
+```
+```swift
+var iso8601withFractionalSeconds: Date?
+```
+
 ### String
 Truncate a string by removing all characters at the `position`
 
@@ -150,6 +176,13 @@ resize(height: CGFloat) -> UIImage
 resize(size: CGSize) -> UIImage
 ```
 
+### UILabel
+Adds an `SFSymbol` image to the beginning or end of a `UILabel`'s text
+
+```swift
+addSFSymbol(named:String, position:UILabel.SFSymbolPosition = .beginning, fontWeight weight:UIFont.Weight = .bold, fontDescriptorDesign design:UIFontDescriptor.SystemDesign = .rounded)
+```
+
 ### UIStackView
 Remove and dealloc all subviews from a UIStackView
 
@@ -174,10 +207,37 @@ displayAlert(title:String?, message:String?, buttonAction:((UIAlertAction)->())?
 ```
 
 ### UIWindow
-Fetche the key window
+Fetches the key window
 
 ```swift
 var key: UIWindow?
+```
+
+### UnkeyedDecodingContainer
+Skips to the next container whilst iterating over an unkeyed decoding container using `while !container.isAtEnd { }`
+
+```swift
+skip()
+```
+
+### URLRequest
+Generates a `URLRequest` whilst automatically converting headers and body to the correct formats
+
+```swift
+init?(url:URL, headers:[String:String], postBody:[String:Any], timeout:TimeInterval = 60.0)
+```
+```swift
+init?(url:URL, headers:[String:String], postString:String, timeout:TimeInterval = 60.0)
+```
+```swift
+init?(url:URL, headers:[String:String], parameters:[String:String], timeout:TimeInterval = 60.0)
+```
+
+### URLResponse
+Returns the HTTP status code from a `URLResponse`
+
+```swift
+statusCode() -> Int?
 ```
 
 ### UserDefaults

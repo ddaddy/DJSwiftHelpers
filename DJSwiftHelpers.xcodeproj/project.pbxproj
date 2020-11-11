@@ -18,6 +18,11 @@
 		620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4B250BBCD700B10032 /* UIViewController.swift */; };
 		620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
 		620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4F250BC1E400B10032 /* UIWindow.swift */; };
+		62D6CDE9255BFCCB00ABD216 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
+		62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEB255BFDA900ABD216 /* Date.swift */; };
+		62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEE255BFFA300ABD216 /* URLResponse.swift */; };
+		62D6CDF2255C002B00ABD216 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF1255C002B00ABD216 /* URLRequest.swift */; };
+		62D6CDF5255C01F400ABD216 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF4255C01F400ABD216 /* UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		620F6A4B250BBCD700B10032 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		620F6A4F250BC1E400B10032 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		62D6CDE8255BFCCB00ABD216 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		62D6CDEB255BFDA900ABD216 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		62D6CDEE255BFFA300ABD216 /* URLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponse.swift; sourceTree = "<group>"; };
+		62D6CDF1255C002B00ABD216 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		62D6CDF4255C01F400ABD216 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,15 +87,20 @@
 			isa = PBXGroup;
 			children = (
 				620F6A32250BB78100B10032 /* Array.swift */,
+				62D6CDEB255BFDA900ABD216 /* Date.swift */,
 				620F6A34250BB78200B10032 /* String.swift */,
 				620F6A45250BBC1800B10032 /* UIApplication.swift */,
 				620F6A36250BB78200B10032 /* UIColor.swift */,
 				620F6A47250BBC2F00B10032 /* UIDevice.swift */,
 				620F6A49250BBC4B00B10032 /* UIImage.swift */,
+				62D6CDF4255C01F400ABD216 /* UILabel.swift */,
 				620F6A33250BB78200B10032 /* UIStackView.swift */,
 				620F6A4B250BBCD700B10032 /* UIViewController.swift */,
 				620F6A4F250BC1E400B10032 /* UIWindow.swift */,
+				62D6CDF1255C002B00ABD216 /* URLRequest.swift */,
+				62D6CDEE255BFFA300ABD216 /* URLResponse.swift */,
 				620F6A4D250BBCE900B10032 /* UserDefaults.swift */,
+				62D6CDE8255BFCCB00ABD216 /* Decodable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -128,7 +143,7 @@
 		620F6A1D250BB75500B10032 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Dappological Ltd.";
 				TargetAttributes = {
 					620F6A25250BB75500B10032 = {
@@ -171,12 +186,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				620F6A39250BB78200B10032 /* String.swift in Sources */,
+				62D6CDF2255C002B00ABD216 /* URLRequest.swift in Sources */,
 				620F6A48250BBC2F00B10032 /* UIDevice.swift in Sources */,
 				620F6A37250BB78200B10032 /* Array.swift in Sources */,
 				620F6A38250BB78200B10032 /* UIStackView.swift in Sources */,
 				620F6A46250BBC1800B10032 /* UIApplication.swift in Sources */,
 				620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */,
 				620F6A3B250BB78200B10032 /* UIColor.swift in Sources */,
+				62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */,
+				62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */,
+				62D6CDF5255C01F400ABD216 /* UILabel.swift in Sources */,
+				62D6CDE9255BFCCB00ABD216 /* Decodable.swift in Sources */,
 				620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */,
 				620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */,
 				620F6A4A250BBC4B00B10032 /* UIImage.swift in Sources */,
@@ -212,6 +232,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -275,6 +296,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -309,8 +331,10 @@
 		620F6A2F250BB75500B10032 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -336,8 +360,10 @@
 		620F6A30250BB75500B10032 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
