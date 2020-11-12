@@ -8,6 +8,7 @@
 
 import UIKit
 
+#if !IS_EXTENSION
 public
 extension UIApplication {
     
@@ -60,3 +61,4 @@ extension UIApplication {
         self.shared.keyWindow?.rootViewController?.dismiss(animated: animated, completion: completion)
     }
 }
+#endif

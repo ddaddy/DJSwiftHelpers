@@ -8,6 +8,7 @@
 
 import UIKit
 
+#if !IS_EXTENSION
 public
 extension UIWindow {
     
@@ -22,3 +23,4 @@ extension UIWindow {
         }
     }
 }
+#endif

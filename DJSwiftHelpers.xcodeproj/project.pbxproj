@@ -18,6 +18,22 @@
 		620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4B250BBCD700B10032 /* UIViewController.swift */; };
 		620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
 		620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4F250BC1E400B10032 /* UIWindow.swift */; };
+		621B3C1F255D467000A5E77F /* DJSwiftHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 620F6A29250BB75500B10032 /* DJSwiftHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		621B3C21255D467000A5E77F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A34250BB78200B10032 /* String.swift */; };
+		621B3C22255D467000A5E77F /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF1255C002B00ABD216 /* URLRequest.swift */; };
+		621B3C23255D467000A5E77F /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A47250BBC2F00B10032 /* UIDevice.swift */; };
+		621B3C24255D467000A5E77F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A32250BB78100B10032 /* Array.swift */; };
+		621B3C25255D467000A5E77F /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A33250BB78200B10032 /* UIStackView.swift */; };
+		621B3C26255D467000A5E77F /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A45250BBC1800B10032 /* UIApplication.swift */; };
+		621B3C27255D467000A5E77F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
+		621B3C28255D467000A5E77F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A36250BB78200B10032 /* UIColor.swift */; };
+		621B3C29255D467000A5E77F /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEE255BFFA300ABD216 /* URLResponse.swift */; };
+		621B3C2A255D467000A5E77F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEB255BFDA900ABD216 /* Date.swift */; };
+		621B3C2B255D467000A5E77F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF4255C01F400ABD216 /* UILabel.swift */; };
+		621B3C2C255D467000A5E77F /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
+		621B3C2D255D467000A5E77F /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4F250BC1E400B10032 /* UIWindow.swift */; };
+		621B3C2E255D467000A5E77F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4B250BBCD700B10032 /* UIViewController.swift */; };
+		621B3C2F255D467000A5E77F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A49250BBC4B00B10032 /* UIImage.swift */; };
 		62D6CDE9255BFCCB00ABD216 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
 		62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEB255BFDA900ABD216 /* Date.swift */; };
 		62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEE255BFFA300ABD216 /* URLResponse.swift */; };
@@ -39,6 +55,8 @@
 		620F6A4B250BBCD700B10032 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		620F6A4F250BC1E400B10032 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		621B3C35255D467000A5E77F /* DJSwiftHelper_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelper_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		621B3C36255D467100A5E77F /* DJSwiftHelpers copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DJSwiftHelpers copy-Info.plist"; path = "/Users/darrenjones/Desktop/DJSwiftHelpers/DJSwiftHelpers copy-Info.plist"; sourceTree = "<absolute>"; };
 		62D6CDE8255BFCCB00ABD216 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		62D6CDEB255BFDA900ABD216 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		62D6CDEE255BFFA300ABD216 /* URLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponse.swift; sourceTree = "<group>"; };
@@ -54,6 +72,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		621B3C30255D467000A5E77F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +87,7 @@
 			children = (
 				620F6A28250BB75500B10032 /* DJSwiftHelpers */,
 				620F6A27250BB75500B10032 /* Products */,
+				621B3C36255D467100A5E77F /* DJSwiftHelpers copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */,
+				621B3C35255D467000A5E77F /* DJSwiftHelper_Extension.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +143,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		621B3C1E255D467000A5E77F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621B3C1F255D467000A5E77F /* DJSwiftHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +170,24 @@
 			name = DJSwiftHelpers;
 			productName = DJSwiftHelpers;
 			productReference = 620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		621B3C1D255D467000A5E77F /* DJSwiftHelper_Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621B3C32255D467000A5E77F /* Build configuration list for PBXNativeTarget "DJSwiftHelper_Extension" */;
+			buildPhases = (
+				621B3C1E255D467000A5E77F /* Headers */,
+				621B3C20255D467000A5E77F /* Sources */,
+				621B3C30255D467000A5E77F /* Frameworks */,
+				621B3C31255D467000A5E77F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJSwiftHelper_Extension;
+			productName = DJSwiftHelpers;
+			productReference = 621B3C35255D467000A5E77F /* DJSwiftHelper_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -166,12 +219,20 @@
 			projectRoot = "";
 			targets = (
 				620F6A25250BB75500B10032 /* DJSwiftHelpers */,
+				621B3C1D255D467000A5E77F /* DJSwiftHelper_Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		620F6A24250BB75500B10032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621B3C31255D467000A5E77F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,6 +261,28 @@
 				620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */,
 				620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */,
 				620F6A4A250BBC4B00B10032 /* UIImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621B3C20255D467000A5E77F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621B3C21255D467000A5E77F /* String.swift in Sources */,
+				621B3C22255D467000A5E77F /* URLRequest.swift in Sources */,
+				621B3C23255D467000A5E77F /* UIDevice.swift in Sources */,
+				621B3C24255D467000A5E77F /* Array.swift in Sources */,
+				621B3C25255D467000A5E77F /* UIStackView.swift in Sources */,
+				621B3C26255D467000A5E77F /* UIApplication.swift in Sources */,
+				621B3C27255D467000A5E77F /* UserDefaults.swift in Sources */,
+				621B3C28255D467000A5E77F /* UIColor.swift in Sources */,
+				621B3C29255D467000A5E77F /* URLResponse.swift in Sources */,
+				621B3C2A255D467000A5E77F /* Date.swift in Sources */,
+				621B3C2B255D467000A5E77F /* UILabel.swift in Sources */,
+				621B3C2C255D467000A5E77F /* Decodable.swift in Sources */,
+				621B3C2D255D467000A5E77F /* UIWindow.swift in Sources */,
+				621B3C2E255D467000A5E77F /* UIViewController.swift in Sources */,
+				621B3C2F255D467000A5E77F /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +468,65 @@
 			};
 			name = Release;
 		};
+		621B3C33255D467000A5E77F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "DJSwiftHelpers copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dappological.DJSwiftHelpers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG IS_EXTENSION";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		621B3C34255D467000A5E77F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "DJSwiftHelpers copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dappological.DJSwiftHelpers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = IS_EXTENSION;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,6 +544,15 @@
 			buildConfigurations = (
 				620F6A2F250BB75500B10032 /* Debug */,
 				620F6A30250BB75500B10032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621B3C32255D467000A5E77F /* Build configuration list for PBXNativeTarget "DJSwiftHelper_Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621B3C33255D467000A5E77F /* Debug */,
+				621B3C34255D467000A5E77F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
