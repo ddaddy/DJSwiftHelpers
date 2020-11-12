@@ -56,7 +56,7 @@
 		620F6A4B250BBCD700B10032 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		620F6A4F250BC1E400B10032 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
-		621B3C35255D467000A5E77F /* DJSwiftHelper_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelper_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621B3C36255D467100A5E77F /* DJSwiftHelpers copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DJSwiftHelpers copy-Info.plist"; path = "/Users/darrenjones/Desktop/DJSwiftHelpers/DJSwiftHelpers copy-Info.plist"; sourceTree = "<absolute>"; };
 		627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJSwiftHelpers.swift; sourceTree = "<group>"; };
 		62D6CDE8255BFCCB00ABD216 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */,
-				621B3C35255D467000A5E77F /* DJSwiftHelper_Extension.framework */,
+				621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 			productReference = 620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		621B3C1D255D467000A5E77F /* DJSwiftHelper_Extension */ = {
+		621B3C1D255D467000A5E77F /* DJSwiftHelpers_Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 621B3C32255D467000A5E77F /* Build configuration list for PBXNativeTarget "DJSwiftHelper_Extension" */;
+			buildConfigurationList = 621B3C32255D467000A5E77F /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_Extension" */;
 			buildPhases = (
 				621B3C1E255D467000A5E77F /* Headers */,
 				621B3C20255D467000A5E77F /* Sources */,
@@ -188,9 +188,9 @@
 			);
 			dependencies = (
 			);
-			name = DJSwiftHelper_Extension;
+			name = DJSwiftHelpers_Extension;
 			productName = DJSwiftHelpers;
-			productReference = 621B3C35255D467000A5E77F /* DJSwiftHelper_Extension.framework */;
+			productReference = 621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 			projectRoot = "";
 			targets = (
 				620F6A25250BB75500B10032 /* DJSwiftHelpers */,
-				621B3C1D255D467000A5E77F /* DJSwiftHelper_Extension */,
+				621B3C1D255D467000A5E77F /* DJSwiftHelpers_Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -552,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		621B3C32255D467000A5E77F /* Build configuration list for PBXNativeTarget "DJSwiftHelper_Extension" */ = {
+		621B3C32255D467000A5E77F /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				621B3C33255D467000A5E77F /* Debug */,

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "621B3C1D255D467000A5E77F"
-               BuildableName = "DJSwiftHelper_Extension.framework"
-               BlueprintName = "DJSwiftHelper_Extension"
+               BuildableName = "DJSwiftHelpers_Extension.framework"
+               BlueprintName = "DJSwiftHelpers_Extension"
                ReferencedContainer = "container:DJSwiftHelpers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "621B3C1D255D467000A5E77F"
-            BuildableName = "DJSwiftHelper_Extension.framework"
-            BlueprintName = "DJSwiftHelper_Extension"
+            BuildableName = "DJSwiftHelpers_Extension.framework"
+            BlueprintName = "DJSwiftHelpers_Extension"
             ReferencedContainer = "container:DJSwiftHelpers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
