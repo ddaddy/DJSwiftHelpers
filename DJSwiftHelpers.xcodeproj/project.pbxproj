@@ -18,6 +18,7 @@
 		620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4B250BBCD700B10032 /* UIViewController.swift */; };
 		620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
 		620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4F250BC1E400B10032 /* UIWindow.swift */; };
+		621136ED255D5CAC003F8FBF /* DJSwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */; };
 		621B3C1F255D467000A5E77F /* DJSwiftHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 620F6A29250BB75500B10032 /* DJSwiftHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		621B3C21255D467000A5E77F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A34250BB78200B10032 /* String.swift */; };
 		621B3C22255D467000A5E77F /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF1255C002B00ABD216 /* URLRequest.swift */; };
@@ -285,6 +286,7 @@
 				621B3C2B255D467000A5E77F /* UILabel.swift in Sources */,
 				621B3C2C255D467000A5E77F /* Decodable.swift in Sources */,
 				621B3C2D255D467000A5E77F /* UIWindow.swift in Sources */,
+				621136ED255D5CAC003F8FBF /* DJSwiftHelpers.swift in Sources */,
 				621B3C2E255D467000A5E77F /* UIViewController.swift in Sources */,
 				621B3C2F255D467000A5E77F /* UIImage.swift in Sources */,
 			);
