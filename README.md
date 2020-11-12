@@ -73,6 +73,13 @@ var iso8601: Date?
 var iso8601withFractionalSeconds: Date?
 ```
 
+### DJSwiftHelpers
+Determines if running inside an app extension or not
+
+```swift
+static var isExtension:Bool
+```
+
 ### String
 Truncate a string by removing all characters at the `position`
 
@@ -129,22 +136,23 @@ ranges<S: StringProtocol>(of string: S, options: String.CompareOptions = []) -> 
 ```
 
 ### UIApplication
+
 Return the top most ViewController regardless if embeded in a navigation stack or not
 
 ```swift
-getTopViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
+class getTopViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
 ```
 
 Display an alert regardless of what's on the screen
 
 ```swift
-displayGlobalAlert(title:String, message:String, completion: (() -> Void)? = nil)
+class displayGlobalAlert(title:String, message:String, completion: (() -> Void)? = nil)
 ```
 
 Dismiss back to the root view controller
 
 ```swift
-dismisstoRoot(animated:Bool, completion:(() -> Void)? = nil)
+class dismisstoRoot(animated:Bool, completion:(() -> Void)? = nil)
 ```
 
 ### UIColor

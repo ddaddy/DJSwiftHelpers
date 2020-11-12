@@ -34,6 +34,7 @@
 		621B3C2D255D467000A5E77F /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4F250BC1E400B10032 /* UIWindow.swift */; };
 		621B3C2E255D467000A5E77F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4B250BBCD700B10032 /* UIViewController.swift */; };
 		621B3C2F255D467000A5E77F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A49250BBC4B00B10032 /* UIImage.swift */; };
+		627631A7255D512F005C09B1 /* DJSwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */; };
 		62D6CDE9255BFCCB00ABD216 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
 		62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEB255BFDA900ABD216 /* Date.swift */; };
 		62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEE255BFFA300ABD216 /* URLResponse.swift */; };
@@ -57,6 +58,7 @@
 		620F6A4F250BC1E400B10032 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		621B3C35255D467000A5E77F /* DJSwiftHelper_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelper_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621B3C36255D467100A5E77F /* DJSwiftHelpers copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DJSwiftHelpers copy-Info.plist"; path = "/Users/darrenjones/Desktop/DJSwiftHelpers/DJSwiftHelpers copy-Info.plist"; sourceTree = "<absolute>"; };
+		627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJSwiftHelpers.swift; sourceTree = "<group>"; };
 		62D6CDE8255BFCCB00ABD216 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		62D6CDEB255BFDA900ABD216 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		62D6CDEE255BFFA300ABD216 /* URLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponse.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				620F6A32250BB78100B10032 /* Array.swift */,
 				62D6CDEB255BFDA900ABD216 /* Date.swift */,
+				627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */,
 				620F6A34250BB78200B10032 /* String.swift */,
 				620F6A45250BBC1800B10032 /* UIApplication.swift */,
 				620F6A36250BB78200B10032 /* UIColor.swift */,
@@ -259,6 +262,7 @@
 				62D6CDF5255C01F400ABD216 /* UILabel.swift in Sources */,
 				62D6CDE9255BFCCB00ABD216 /* Decodable.swift in Sources */,
 				620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */,
+				627631A7255D512F005C09B1 /* DJSwiftHelpers.swift in Sources */,
 				620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */,
 				620F6A4A250BBC4B00B10032 /* UIImage.swift in Sources */,
 			);
