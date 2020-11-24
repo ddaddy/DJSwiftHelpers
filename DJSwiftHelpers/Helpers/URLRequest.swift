@@ -24,21 +24,33 @@ extension URLRequest {
         - url: The URL of the request
         - headers: A complete set of headers for the request
         - postBody: A `Dictionary` of data to send with the request
+        - json: Encode the payload as JSON or just key:value pairs. Default is JSON
         - timeout: `TimeInterval` that defaults to 60 seconds
      - Returns: A `URLRequest` if the JSON creating was succesful, otherwise nil
      */
-    init?(url:URL, headers:[String:String], postBody:[String:Any], timeout:TimeInterval = 60.0) {
+    init?(url:URL, headers:[String:String], postBody:[String:Any], json:Bool = true, timeout:TimeInterval = 60.0) {
         
         self.init(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: timeout)
         self.allHTTPHeaderFields = headers
         
-        // Convert the body Dictionary to JSON
-        guard let httpBody = try? JSONSerialization.data(withJSONObject: postBody, options: []) else {
-            return nil
+        if json == true
+        {
+            // Convert the body Dictionary to JSON
+            guard let httpBody = try? JSONSerialization.data(withJSONObject: postBody, options: []) else {
+                return nil
+            }
+//            print(String(data: httpBody, encoding: .utf8)!)
+            self.httpBody = httpBody
         }
-//        print(String(data: httpBody, encoding: .utf8)!)
-        
-        self.httpBody = httpBody
+        else
+        {
+            // Convert the parameters Dictionary to URLQueryItem's to append to the URL
+            var components = URLComponents.init(url: url, resolvingAgainstBaseURL: false)!
+            components.queryItems = postBody.compactMapValues({ $0 as? String }).map { (key, value) in
+                    URLQueryItem(name: key, value: value)
+            }
+            self.httpBody = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B").data(using: .utf8)
+        }
         
         self.httpMethod = HTTPMethod.POST.rawValue
     }

@@ -232,7 +232,7 @@ skip()
 Generates a `URLRequest` whilst automatically converting headers and body to the correct formats
 
 ```swift
-init?(url:URL, headers:[String:String], postBody:[String:Any], timeout:TimeInterval = 60.0)
+init?(url:URL, headers:[String:String], postBody:[String:Any], json:Bool = true, timeout:TimeInterval = 60.0)
 ```
 ```swift
 init?(url:URL, headers:[String:String], postString:String, timeout:TimeInterval = 60.0)
