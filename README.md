@@ -248,6 +248,14 @@ Returns the HTTP status code from a `URLResponse`
 statusCode() -> Int?
 ```
 
+### URLSession
+A URLSession that will bypass an SSL certificate check.
+
+#### WARNING!! Be careful where you use this! It can be dangerous.
+```swift
+static var selfSignedSSLSession:URLSession
+```
+
 ### UserDefaults
 Save to Us****erDefaults or remove it if nil
 
