@@ -43,6 +43,17 @@
 		62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEE255BFFA300ABD216 /* URLResponse.swift */; };
 		62D6CDF2255C002B00ABD216 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF1255C002B00ABD216 /* URLRequest.swift */; };
 		62D6CDF5255C01F400ABD216 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF4255C01F400ABD216 /* UILabel.swift */; };
+		62DF506B256E9A2F00C88FF7 /* DJSwiftHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 620F6A29250BB75500B10032 /* DJSwiftHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62DF5078256E9A8900C88FF7 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A32250BB78100B10032 /* Array.swift */; };
+		62DF507C256E9A8B00C88FF7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEB255BFDA900ABD216 /* Date.swift */; };
+		62DF507D256E9A8D00C88FF7 /* DJSwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */; };
+		62DF5081256E9A9000C88FF7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A34250BB78200B10032 /* String.swift */; };
+		62DF5089256E9A9400C88FF7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A36250BB78200B10032 /* UIColor.swift */; };
+		62DF50A5256E9AA500C88FF7 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF1255C002B00ABD216 /* URLRequest.swift */; };
+		62DF50A9256E9AA600C88FF7 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEE255BFFA300ABD216 /* URLResponse.swift */; };
+		62DF50AD256E9AA800C88FF7 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C950256D6FF8003F3A67 /* URLSession.swift */; };
+		62DF50B1256E9AAA00C88FF7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
+		62DF50B5256E9AAD00C88FF7 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,13 +72,13 @@
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		620F6A4F250BC1E400B10032 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		621B3C36255D467100A5E77F /* DJSwiftHelpers copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DJSwiftHelpers copy-Info.plist"; path = "/Users/darrenjones/Desktop/DJSwiftHelpers/DJSwiftHelpers copy-Info.plist"; sourceTree = "<absolute>"; };
 		627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJSwiftHelpers.swift; sourceTree = "<group>"; };
 		62D6CDE8255BFCCB00ABD216 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		62D6CDEB255BFDA900ABD216 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		62D6CDEE255BFFA300ABD216 /* URLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponse.swift; sourceTree = "<group>"; };
 		62D6CDF1255C002B00ABD216 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		62D6CDF4255C01F400ABD216 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		62DF505D256E99DB00C88FF7 /* DJSwiftHelpers_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62DF505A256E99DB00C88FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,7 +111,6 @@
 			children = (
 				620F6A28250BB75500B10032 /* DJSwiftHelpers */,
 				620F6A27250BB75500B10032 /* Products */,
-				621B3C36255D467100A5E77F /* DJSwiftHelpers copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +119,7 @@
 			children = (
 				620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */,
 				621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */,
+				62DF505D256E99DB00C88FF7 /* DJSwiftHelpers_Watch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +177,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62DF5058256E99DB00C88FF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DF506B256E9A2F00C88FF7 /* DJSwiftHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -198,6 +224,24 @@
 			productReference = 621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		62DF505C256E99DB00C88FF7 /* DJSwiftHelpers_Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62DF5064256E99DB00C88FF7 /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_Watch" */;
+			buildPhases = (
+				62DF5058256E99DB00C88FF7 /* Headers */,
+				62DF5059256E99DB00C88FF7 /* Sources */,
+				62DF505A256E99DB00C88FF7 /* Frameworks */,
+				62DF505B256E99DB00C88FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJSwiftHelpers_Watch;
+			productName = DJSwiftHelpers_Watch;
+			productReference = 62DF505D256E99DB00C88FF7 /* DJSwiftHelpers_Watch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,6 +254,9 @@
 					620F6A25250BB75500B10032 = {
 						CreatedOnToolsVersion = 11.7;
 						LastSwiftMigration = 1170;
+					};
+					62DF505C256E99DB00C88FF7 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -228,6 +275,7 @@
 			targets = (
 				620F6A25250BB75500B10032 /* DJSwiftHelpers */,
 				621B3C1D255D467000A5E77F /* DJSwiftHelpers_Extension */,
+				62DF505C256E99DB00C88FF7 /* DJSwiftHelpers_Watch */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +289,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		621B3C31255D467000A5E77F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62DF505B256E99DB00C88FF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,6 +350,23 @@
 				621136ED255D5CAC003F8FBF /* DJSwiftHelpers.swift in Sources */,
 				621B3C2E255D467000A5E77F /* UIViewController.swift in Sources */,
 				621B3C2F255D467000A5E77F /* UIImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62DF5059256E99DB00C88FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DF507D256E9A8D00C88FF7 /* DJSwiftHelpers.swift in Sources */,
+				62DF50AD256E9AA800C88FF7 /* URLSession.swift in Sources */,
+				62DF5089256E9A9400C88FF7 /* UIColor.swift in Sources */,
+				62DF50B1256E9AAA00C88FF7 /* UserDefaults.swift in Sources */,
+				62DF5078256E9A8900C88FF7 /* Array.swift in Sources */,
+				62DF5081256E9A9000C88FF7 /* String.swift in Sources */,
+				62DF50A5256E9AA500C88FF7 /* URLRequest.swift in Sources */,
+				62DF50B5256E9AAD00C88FF7 /* Decodable.swift in Sources */,
+				62DF507C256E9A8B00C88FF7 /* Date.swift in Sources */,
+				62DF50A9256E9AA600C88FF7 /* URLResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +564,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "DJSwiftHelpers copy-Info.plist";
+				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +594,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "DJSwiftHelpers copy-Info.plist";
+				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,6 +608,62 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = IS_EXTENSION;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62DF5062256E99DB00C88FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2D95M63CXY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		62DF5063256E99DB00C88FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2D95M63CXY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -565,6 +693,15 @@
 			buildConfigurations = (
 				621B3C33255D467000A5E77F /* Debug */,
 				621B3C34255D467000A5E77F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62DF5064256E99DB00C88FF7 /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62DF5062256E99DB00C88FF7 /* Debug */,
+				62DF5063256E99DB00C88FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

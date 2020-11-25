@@ -9,6 +9,7 @@
 import Foundation
 
 @available(iOS 10.3, *)
+@available(watchOS 3.3, *)
 public
 extension URLSession {
     
@@ -16,6 +17,7 @@ extension URLSession {
 }
 
 @available(iOS 10.3, *)
+@available(watchOS 3.3, *)
 fileprivate
 class SelfSignedURLSession:NSObject, URLSessionDelegate {
     
@@ -53,6 +55,7 @@ class SelfSignedURLSession:NSObject, URLSessionDelegate {
 }
 
 @available(iOS 10.3, *)
+@available(watchOS 3.3, *)
 fileprivate
 extension SecTrust {
 
@@ -68,6 +71,7 @@ extension SecTrust {
 }
 
 @available(iOS 10.3, *)
+@available(watchOS 3.3, *)
 fileprivate
 extension SecCertificate {
 
