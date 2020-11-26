@@ -29,7 +29,7 @@ extension URLRequest {
         - httpMethod: `HTTPMethod` eg. `.POST` `.GET` `.PUT` defaults to `.POST`
      - Returns: A `URLRequest` if the JSON creating was succesful, otherwise nil
      */
-    init?(url:URL, headers:[String:String], postBody:[String:Any], json:Bool = true, timeout:TimeInterval = 60.0, httpMethod:HTTPMethod = .POST) {
+    init?(url:URL, headers:[String:String], postBody:[String:Any], json:Bool = true, timeout:TimeInterval = 60.0, httpMethod:HTTPMethod = HTTPMethod.POST) {
         
         self.init(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: timeout)
         self.allHTTPHeaderFields = headers
