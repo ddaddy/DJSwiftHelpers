@@ -8,7 +8,7 @@
 
 import Foundation
 
-private
+public
 enum HTTPMethod: String {
     case GET = "GET"
     case POST = "POST"
@@ -26,9 +26,10 @@ extension URLRequest {
         - postBody: A `Dictionary` of data to send with the request
         - json: Encode the payload as JSON or just key:value pairs. Default is JSON
         - timeout: `TimeInterval` that defaults to 60 seconds
+        - httpMethod: `HTTPMethod` eg. `.POST` `.GET` `.PUT` defaults to `.POST`
      - Returns: A `URLRequest` if the JSON creating was succesful, otherwise nil
      */
-    init?(url:URL, headers:[String:String], postBody:[String:Any], json:Bool = true, timeout:TimeInterval = 60.0) {
+    init?(url:URL, headers:[String:String], postBody:[String:Any], json:Bool = true, timeout:TimeInterval = 60.0, httpMethod:HTTPMethod = .POST) {
         
         self.init(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: timeout)
         self.allHTTPHeaderFields = headers
@@ -52,7 +53,7 @@ extension URLRequest {
             self.httpBody = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B").data(using: .utf8)
         }
         
-        self.httpMethod = HTTPMethod.POST.rawValue
+        self.httpMethod = httpMethod.rawValue
     }
     
     /**
@@ -62,9 +63,10 @@ extension URLRequest {
         - headers: A complete set of headers for the request
         - postString: A `String` to send with the request
         - timeout: `TimeInterval` that defaults to 60 seconds
+        - httpMethod: `HTTPMethod` eg. `.POST` `.GET` `.PUT` defaults to `.POST`
      - Returns: A `URLRequest` if the JSON creating was succesful, otherwise nil
      */
-    init?(url:URL, headers:[String:String], postString:String, timeout:TimeInterval = 60.0) {
+    init?(url:URL, headers:[String:String], postString:String, timeout:TimeInterval = 60.0, httpMethod:HTTPMethod = .POST) {
         
         self.init(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: timeout)
         self.allHTTPHeaderFields = headers
@@ -73,7 +75,7 @@ extension URLRequest {
         let httpBody = postString.data(using: .utf8)
         self.httpBody = httpBody
         
-        self.httpMethod = HTTPMethod.POST.rawValue
+        self.httpMethod = httpMethod.rawValue
     }
     
     /**
