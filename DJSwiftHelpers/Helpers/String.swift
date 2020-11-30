@@ -153,3 +153,12 @@ extension StringProtocol {
         return result
     }
 }
+
+public
+extension StringProtocol {
+    
+    /**
+     Splits a string into an array of lines
+     */
+    var lines: [SubSequence] { split(whereSeparator: \.isNewline) }
+}

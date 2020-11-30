@@ -135,6 +135,12 @@ indices<S: StringProtocol>(of string: S, options: String.CompareOptions = []) ->
 ranges<S: StringProtocol>(of string: S, options: String.CompareOptions = []) -> [Range<Index>]
 ```
 
+Splits a string into an array of lines
+
+```swift
+var lines: [SubSequence]
+```
+
 ### UIApplication
 
 Return the top most ViewController regardless if embeded in a navigation stack or not
