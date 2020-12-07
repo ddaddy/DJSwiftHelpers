@@ -47,6 +47,15 @@ Split an `Array` into multiple arrays of size
 chunked(into size: Int) -> [[Element]]
 ```
 
+Filters an array to return one of each item where the keyPath elements are unique
+
+```swift
+uniques<T: Hashable>(by keyPath: KeyPath<Element, T>) -> [Element]
+
+Example:
+.uniques(by: \.surname)
+```
+
 ### Date
 Adds additional seconds or minutes to a `Date`
 
@@ -263,7 +272,7 @@ static var selfSignedSSLSession:URLSession
 ```
 
 ### UserDefaults
-Save to Us****erDefaults or remove it if nil
+Save to UserDefaults or remove it if nil
 
 ```swift
 setOrDelete(value:String?, forKey key:String)
