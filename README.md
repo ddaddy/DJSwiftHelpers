@@ -67,6 +67,12 @@ adding(seconds: Int) -> Date
 adding(minutes: Int) -> Date
 ```
 
+Deduct one `Date` from another
+
+```swift
+- (lhs: Date, rhs: Date) -> TimeInterval
+```
+
 Converts an iso8601 string with or without milliseconds `2020-11-11T11:39:00Z` ro `2020-11-11T11:39:00.000Z`
 
 ```swift

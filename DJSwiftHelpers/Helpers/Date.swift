@@ -26,6 +26,18 @@ extension Date {
     }
 }
 
+public
+extension Date {
+    
+    /**
+     Deducts 1 date from the other resulting in the time difference.
+     - Returns: `TimeInterval` between the 2 dates
+     */
+    static func - (lhs: Date, rhs: Date) -> TimeInterval {
+        return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
+    }
+}
+
 @available(iOS 10, *)
 @available(watchOS 3.0, *)
 private
