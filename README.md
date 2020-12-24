@@ -56,6 +56,13 @@ Example:
 .uniques(by: \.surname)
 ```
 
+### CLLocationCoordinate2D
+Determine if a location is within a bounding rect
+
+```swift
+locationIsInside(minLat:Double, maxLat:Double, minLong:Double, maxLong:Double) -> Bool
+```
+
 ### Date
 Adds additional seconds or minutes to a `Date`
 
