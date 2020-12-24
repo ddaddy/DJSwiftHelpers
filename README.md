@@ -95,6 +95,16 @@ var iso8601: Date?
 var iso8601withFractionalSeconds: Date?
 ```
 
+### Double
+Round doubles for less accurate comparisons
+
+```swift
+static func equal(_ lhs: Double, _ rhs: Double, precise value: Int? = nil) -> Bool
+```
+```swift
+func precised(_ value: Int = 1) -> Double
+```
+
 ### DJSwiftHelpers
 Determines if running inside an app extension or not
 
