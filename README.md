@@ -209,6 +209,18 @@ var isTV: Bool
 var isCarPlay: Bool
 ```
 
+### UIFont
+Specify a font weight to a dynamic font style
+
+```swift
+static func preferredFont(for style: TextStyle, weight: Weight) -> UIFont
+```
+use like:
+
+```swift
+label.font = UIFont.preferredFont(for: .title2, weight: .medium)
+```
+
 ### UIImage
 
 Convert a String to Data then save it to the given URL path
