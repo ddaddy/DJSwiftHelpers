@@ -63,6 +63,14 @@ Determine if a location is within a bounding rect
 locationIsInside(minLat:Double, maxLat:Double, minLong:Double, maxLong:Double) -> Bool
 ```
 
+### Collection (Array, Dictionary, Set etc..)
+Removes the risk of `indexOutOfBounds` crashes.
+
+```swift
+subscript(safe index: Index) -> Element?
+// array[safe: 5]
+```
+
 ### Date
 Adds additional seconds or minutes to a `Date`
 
