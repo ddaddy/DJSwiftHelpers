@@ -8,6 +8,7 @@
 
 import UIKit
 
+#if !IS_WATCH
 @available(iOS 11.0, *)
 public
 extension UIFont {
@@ -30,3 +31,4 @@ extension UIFont {
         return metrics.scaledFont(for: font)
     }
 }
+#endif
