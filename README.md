@@ -56,6 +56,15 @@ Example:
 .uniques(by: \.surname)
 ```
 
+Filters an array to return one of each item where the combined keyPath elements are unique
+
+```swift
+uniques<T: Hashable, U: Hashable>(by keyPath: KeyPath<Element, T>, and secondKeyPath: KeyPath<Element, U>) -> [Element]
+
+Example:
+.uniques(by: \.firstName, and: \.surname)
+```
+
 ### CLLocationCoordinate2D
 Determine if a location is within a bounding rect
 

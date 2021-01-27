@@ -51,4 +51,42 @@ extension Array {
             return alreadyExists ? result : result + [element]
         }
     }
+    
+    /**
+     Filters an array to return one of each item where the combined keyPath elements are unique
+     - Parameters:
+        - keyPath: The first keypath to filter
+        - secondKeyPath: The second keypath to filter
+     
+     Example:
+     ```
+     struct Person {
+         let firstName:String
+         let surname:String
+         let age:Int
+     }
+
+     let array = [
+         Person(firstName: "Darren", surname: "Jones", age: 36),
+         Person(firstName: "Darren", surname: "Jones", age: 42),
+         Person(firstName: "Jenny", surname: "Jones", age: 42),
+         Person(firstName: "Mark", surname: "Chadwick", age: 22)
+     ]
+     
+     let filtered = array.uniques(by: \.firstName, and: \.surname)
+     /*
+     [
+     {firstName: "Darren", surname: "Jones", age: 36},
+     {firstName: "Jenny", surname: "Jones", age: 42},
+     {firstName: "Mark", surname: "Chadwick", age: 22}
+     ]
+     */
+     ```
+     */
+    func uniques<T: Hashable, U: Hashable>(by keyPath: KeyPath<Element, T>, and secondKeyPath: KeyPath<Element, U>) -> [Element] {
+        return reduce([]) { result, element in
+            let alreadyExists = (result.contains(where: { $0[keyPath: keyPath] == element[keyPath: keyPath] && $0[keyPath: secondKeyPath] == element[keyPath: secondKeyPath] }))
+            return alreadyExists ? result : result + [element]
+        }
+    }
 }
