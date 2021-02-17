@@ -43,3 +43,25 @@ extension UnkeyedDecodingContainer {
         _ = try decode(Empty.self)
     }
 }
+
+/**
+ A custom `Decodable` object that can be used to decode arrays
+ whose contents may sometimes fail but you want the whole array to be parsed.
+ 
+ Use like this:
+ ```
+ let throwableArray = try attributes.decode([Throwable<T>].self, forKey: .key)
+ ```
+ Decodes as a `Result<T, Error>` type which you can get the succeeded results like this:
+ ```
+ let succesfullyDecoded = throwableArray.compactMap({ try? $0.result.get() })
+ ```
+ */
+public
+struct Throwable<T: Decodable>: Decodable {
+    let result: Result<T, Error>
+
+    public init(from decoder: Decoder) throws {
+        result = Result(catching: { try T(from: decoder) })
+    }
+}
