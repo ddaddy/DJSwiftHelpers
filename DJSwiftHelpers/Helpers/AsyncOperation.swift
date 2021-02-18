@@ -17,7 +17,7 @@ import Foundation
  
  [Thanks to SwiftLee](https://www.avanderlee.com/swift/asynchronous-operations/)
  */
-public
+open
 class AsyncOperation: Operation {
     private let lockQueue = DispatchQueue(label: "com.djswifthelpers.asyncoperation", attributes: .concurrent)
 
