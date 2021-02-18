@@ -57,7 +57,7 @@ class AsyncOperation: Operation {
         }
     }
 
-    public override func start() {
+    open override func start() {
         
         guard !isCancelled else {
             finish()
@@ -69,11 +69,11 @@ class AsyncOperation: Operation {
         main()
     }
 
-    public override func main() {
+    open override func main() {
         fatalError("Subclasses must implement `main` without overriding super.")
     }
 
-    public func finish() {
+    open func finish() {
         isExecuting = false
         isFinished = true
     }
