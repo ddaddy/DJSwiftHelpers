@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62018FE725DEB40F002B71A5 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62018FE625DEB40F002B71A5 /* AsyncOperation.swift */; };
+		62018FE825DEB40F002B71A5 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62018FE625DEB40F002B71A5 /* AsyncOperation.swift */; };
+		62018FE925DEB40F002B71A5 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62018FE625DEB40F002B71A5 /* AsyncOperation.swift */; };
 		6206C951256D6FF8003F3A67 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C950256D6FF8003F3A67 /* URLSession.swift */; };
 		6206C954256D6FFC003F3A67 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C950256D6FF8003F3A67 /* URLSession.swift */; };
 		620F6A2B250BB75500B10032 /* DJSwiftHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 620F6A29250BB75500B10032 /* DJSwiftHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,6 +72,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62018FE625DEB40F002B71A5 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		6206C950256D6FF8003F3A67 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		620F6A29250BB75500B10032 /* DJSwiftHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJSwiftHelpers.h; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				620F6A32250BB78100B10032 /* Array.swift */,
+				62018FE625DEB40F002B71A5 /* AsyncOperation.swift */,
 				625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */,
 				6220B4C225ADDDC40064B9EB /* Collection.swift */,
 				62D6CDEB255BFDA900ABD216 /* Date.swift */,
@@ -340,6 +345,7 @@
 				62C4485225A2208F0014F44B /* UIFont.swift in Sources */,
 				620F6A3B250BB78200B10032 /* UIColor.swift in Sources */,
 				625380822594CE9B00C58B2F /* Double.swift in Sources */,
+				62018FE725DEB40F002B71A5 /* AsyncOperation.swift in Sources */,
 				62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */,
 				6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */,
 				62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */,
@@ -368,6 +374,7 @@
 				62C4485325A2208F0014F44B /* UIFont.swift in Sources */,
 				621B3C28255D467000A5E77F /* UIColor.swift in Sources */,
 				625380862594CE9E00C58B2F /* Double.swift in Sources */,
+				62018FE825DEB40F002B71A5 /* AsyncOperation.swift in Sources */,
 				621B3C29255D467000A5E77F /* URLResponse.swift in Sources */,
 				6220B4C425ADDDC40064B9EB /* Collection.swift in Sources */,
 				621B3C2A255D467000A5E77F /* Date.swift in Sources */,
@@ -393,6 +400,7 @@
 				6220B4C525ADDDC40064B9EB /* Collection.swift in Sources */,
 				62DF5078256E9A8900C88FF7 /* Array.swift in Sources */,
 				62DF5081256E9A9000C88FF7 /* String.swift in Sources */,
+				62018FE925DEB40F002B71A5 /* AsyncOperation.swift in Sources */,
 				62DF50A5256E9AA500C88FF7 /* URLRequest.swift in Sources */,
 				62DF50B5256E9AAD00C88FF7 /* Decodable.swift in Sources */,
 				62C4485425A2208F0014F44B /* UIFont.swift in Sources */,
