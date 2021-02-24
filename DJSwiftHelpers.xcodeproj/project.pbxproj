@@ -49,6 +49,9 @@
 		625380822594CE9B00C58B2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380812594CE9B00C58B2F /* Double.swift */; };
 		625380862594CE9E00C58B2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380812594CE9B00C58B2F /* Double.swift */; };
 		6253808A2594CE9E00C58B2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380812594CE9B00C58B2F /* Double.swift */; };
+		62754BA625E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
+		62754BA725E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
+		62754BA825E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
 		627631A7255D512F005C09B1 /* DJSwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */; };
 		62C4485225A2208F0014F44B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C4485125A2208F0014F44B /* UIFont.swift */; };
 		62C4485325A2208F0014F44B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C4485125A2208F0014F44B /* UIFont.swift */; };
@@ -91,6 +94,7 @@
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		625380812594CE9B00C58B2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		62754BA525E691E200F2F489 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJSwiftHelpers.swift; sourceTree = "<group>"; };
 		62C4485125A2208F0014F44B /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		62D6CDE8255BFCCB00ABD216 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				620F6A32250BB78100B10032 /* Array.swift */,
 				62018FE625DEB40F002B71A5 /* AsyncOperation.swift */,
 				625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */,
+				62754BA525E691E200F2F489 /* Codable.swift */,
 				6220B4C225ADDDC40064B9EB /* Collection.swift */,
 				62D6CDEB255BFDA900ABD216 /* Date.swift */,
 				625380812594CE9B00C58B2F /* Double.swift */,
@@ -349,6 +354,7 @@
 				62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */,
 				6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */,
 				62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */,
+				62754BA625E691E200F2F489 /* Codable.swift in Sources */,
 				625380722594BCE900C58B2F /* CLLocationCoordinate2D.swift in Sources */,
 				62D6CDF5255C01F400ABD216 /* UILabel.swift in Sources */,
 				62D6CDE9255BFCCB00ABD216 /* Decodable.swift in Sources */,
@@ -378,6 +384,7 @@
 				621B3C29255D467000A5E77F /* URLResponse.swift in Sources */,
 				6220B4C425ADDDC40064B9EB /* Collection.swift in Sources */,
 				621B3C2A255D467000A5E77F /* Date.swift in Sources */,
+				62754BA725E691E200F2F489 /* Codable.swift in Sources */,
 				625380762594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */,
 				621B3C2B255D467000A5E77F /* UILabel.swift in Sources */,
 				621B3C2C255D467000A5E77F /* Decodable.swift in Sources */,
@@ -394,6 +401,7 @@
 			files = (
 				62DF507D256E9A8D00C88FF7 /* DJSwiftHelpers.swift in Sources */,
 				62DF50AD256E9AA800C88FF7 /* URLSession.swift in Sources */,
+				62754BA825E691E200F2F489 /* Codable.swift in Sources */,
 				62DF5089256E9A9400C88FF7 /* UIColor.swift in Sources */,
 				6253807A2594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */,
 				62DF50B1256E9AAA00C88FF7 /* UserDefaults.swift in Sources */,

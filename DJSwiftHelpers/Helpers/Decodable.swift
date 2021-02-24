@@ -57,6 +57,7 @@ extension UnkeyedDecodingContainer {
  let succesfullyDecoded = throwableArray.compactMap({ try? $0.result.get() })
  ```
  */
+@available(*, deprecated, message: "Use LossyCodableList<Element> instead")
 public
 struct Throwable<T: Decodable>: Decodable {
     
