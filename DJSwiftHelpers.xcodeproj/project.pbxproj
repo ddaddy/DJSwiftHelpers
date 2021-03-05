@@ -109,7 +109,7 @@
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		625380812594CE9B00C58B2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
-		6266547E25F2765C00696303 /* DJSwiftHelpers_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6266547E25F2765C00696303 /* DJSwiftHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6266548025F2765C00696303 /* DJSwiftHelpers_MacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJSwiftHelpers_MacOS.h; sourceTree = "<group>"; };
 		6266548125F2765C00696303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62754BA525E691E200F2F489 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		62D6CDEE255BFFA300ABD216 /* URLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponse.swift; sourceTree = "<group>"; };
 		62D6CDF1255C002B00ABD216 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		62D6CDF4255C01F400ABD216 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		62DF505D256E99DB00C88FF7 /* DJSwiftHelpers_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DF505D256E99DB00C88FF7 /* DJSwiftHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +169,8 @@
 			children = (
 				620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */,
 				621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */,
-				62DF505D256E99DB00C88FF7 /* DJSwiftHelpers_Watch.framework */,
-				6266547E25F2765C00696303 /* DJSwiftHelpers_MacOS.framework */,
+				62DF505D256E99DB00C88FF7 /* DJSwiftHelpers.framework */,
+				6266547E25F2765C00696303 /* DJSwiftHelpers.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 			);
 			name = DJSwiftHelpers_MacOS;
 			productName = DJSwiftHelpers_MacOS;
-			productReference = 6266547E25F2765C00696303 /* DJSwiftHelpers_MacOS.framework */;
+			productReference = 6266547E25F2765C00696303 /* DJSwiftHelpers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		62DF505C256E99DB00C88FF7 /* DJSwiftHelpers_Watch */ = {
@@ -331,7 +331,7 @@
 			);
 			name = DJSwiftHelpers_Watch;
 			productName = DJSwiftHelpers_Watch;
-			productReference = 62DF505D256E99DB00C88FF7 /* DJSwiftHelpers_Watch.framework */;
+			productReference = 62DF505D256E99DB00C88FF7 /* DJSwiftHelpers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -772,7 +772,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-MacOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DJSwiftHelpers;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -798,7 +798,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-MacOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DJSwiftHelpers;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -824,7 +824,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-Watch";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DJSwiftHelpers;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG IS_WATCH";
@@ -853,7 +853,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-Watch";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DJSwiftHelpers;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = IS_WATCH;
