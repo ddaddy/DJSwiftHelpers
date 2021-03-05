@@ -56,6 +56,7 @@ class SelfSignedURLSession:NSObject, URLSessionDelegate {
 
 @available(iOS 10.3, *)
 @available(watchOS 3.3, *)
+@available(OSX 10.12.4, *)
 fileprivate
 extension SecTrust {
 
@@ -72,6 +73,7 @@ extension SecTrust {
 
 @available(iOS 10.3, *)
 @available(watchOS 3.3, *)
+@available(OSX 10.12.4, *)
 fileprivate
 extension SecCertificate {
 

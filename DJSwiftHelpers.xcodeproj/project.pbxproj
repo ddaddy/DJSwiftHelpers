@@ -49,6 +49,21 @@
 		625380822594CE9B00C58B2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380812594CE9B00C58B2F /* Double.swift */; };
 		625380862594CE9E00C58B2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380812594CE9B00C58B2F /* Double.swift */; };
 		6253808A2594CE9E00C58B2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380812594CE9B00C58B2F /* Double.swift */; };
+		6266548225F2765C00696303 /* DJSwiftHelpers_MacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6266548025F2765C00696303 /* DJSwiftHelpers_MacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6266548A25F2766700696303 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A32250BB78100B10032 /* Array.swift */; };
+		6266548F25F2766B00696303 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62018FE625DEB40F002B71A5 /* AsyncOperation.swift */; };
+		6266549125F2767000696303 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
+		6266549225F2767000696303 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDF1255C002B00ABD216 /* URLRequest.swift */; };
+		6266549525F2767000696303 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
+		6266549725F2767000696303 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C950256D6FF8003F3A67 /* URLSession.swift */; };
+		6266549B25F2767000696303 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
+		6266549C25F2767000696303 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380812594CE9B00C58B2F /* Double.swift */; };
+		6266549E25F2767000696303 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEE255BFFA300ABD216 /* URLResponse.swift */; };
+		6266549F25F2767000696303 /* DJSwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */; };
+		626654A025F2767000696303 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
+		626654A125F2767000696303 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A34250BB78200B10032 /* String.swift */; };
+		626654A225F2767000696303 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
+		626654A325F2767000696303 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDEB255BFDA900ABD216 /* Date.swift */; };
 		62754BA625E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
 		62754BA725E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
 		62754BA825E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
@@ -94,6 +109,9 @@
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		625380812594CE9B00C58B2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		6266547E25F2765C00696303 /* DJSwiftHelpers_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6266548025F2765C00696303 /* DJSwiftHelpers_MacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJSwiftHelpers_MacOS.h; sourceTree = "<group>"; };
+		6266548125F2765C00696303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62754BA525E691E200F2F489 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJSwiftHelpers.swift; sourceTree = "<group>"; };
 		62C4485125A2208F0014F44B /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
@@ -120,6 +138,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6266547B25F2765C00696303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62DF505A256E99DB00C88FF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				620F6A28250BB75500B10032 /* DJSwiftHelpers */,
+				6266547F25F2765C00696303 /* DJSwiftHelpers_MacOS */,
 				620F6A27250BB75500B10032 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,6 +170,7 @@
 				620F6A26250BB75500B10032 /* DJSwiftHelpers.framework */,
 				621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */,
 				62DF505D256E99DB00C88FF7 /* DJSwiftHelpers_Watch.framework */,
+				6266547E25F2765C00696303 /* DJSwiftHelpers_MacOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +215,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		6266547F25F2765C00696303 /* DJSwiftHelpers_MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				6266548025F2765C00696303 /* DJSwiftHelpers_MacOS.h */,
+				6266548125F2765C00696303 /* Info.plist */,
+			);
+			path = DJSwiftHelpers_MacOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -204,6 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				621B3C1F255D467000A5E77F /* DJSwiftHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6266547925F2765C00696303 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266548225F2765C00696303 /* DJSwiftHelpers_MacOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +298,24 @@
 			productReference = 621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		6266547D25F2765C00696303 /* DJSwiftHelpers_MacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6266548525F2765C00696303 /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_MacOS" */;
+			buildPhases = (
+				6266547925F2765C00696303 /* Headers */,
+				6266547A25F2765C00696303 /* Sources */,
+				6266547B25F2765C00696303 /* Frameworks */,
+				6266547C25F2765C00696303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJSwiftHelpers_MacOS;
+			productName = DJSwiftHelpers_MacOS;
+			productReference = 6266547E25F2765C00696303 /* DJSwiftHelpers_MacOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		62DF505C256E99DB00C88FF7 /* DJSwiftHelpers_Watch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62DF5064256E99DB00C88FF7 /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_Watch" */;
@@ -285,6 +347,9 @@
 						CreatedOnToolsVersion = 11.7;
 						LastSwiftMigration = 1170;
 					};
+					6266547D25F2765C00696303 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					62DF505C256E99DB00C88FF7 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -306,6 +371,7 @@
 				620F6A25250BB75500B10032 /* DJSwiftHelpers */,
 				621B3C1D255D467000A5E77F /* DJSwiftHelpers_Extension */,
 				62DF505C256E99DB00C88FF7 /* DJSwiftHelpers_Watch */,
+				6266547D25F2765C00696303 /* DJSwiftHelpers_MacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -319,6 +385,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		621B3C31255D467000A5E77F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6266547C25F2765C00696303 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,6 +465,27 @@
 				621136ED255D5CAC003F8FBF /* DJSwiftHelpers.swift in Sources */,
 				621B3C2E255D467000A5E77F /* UIViewController.swift in Sources */,
 				621B3C2F255D467000A5E77F /* UIImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6266547A25F2765C00696303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6266548F25F2766B00696303 /* AsyncOperation.swift in Sources */,
+				626654A125F2767000696303 /* String.swift in Sources */,
+				626654A225F2767000696303 /* Decodable.swift in Sources */,
+				6266549F25F2767000696303 /* DJSwiftHelpers.swift in Sources */,
+				6266549725F2767000696303 /* URLSession.swift in Sources */,
+				6266549E25F2767000696303 /* URLResponse.swift in Sources */,
+				6266549B25F2767000696303 /* Collection.swift in Sources */,
+				6266549125F2767000696303 /* Codable.swift in Sources */,
+				626654A025F2767000696303 /* UserDefaults.swift in Sources */,
+				6266549525F2767000696303 /* CLLocationCoordinate2D.swift in Sources */,
+				6266548A25F2766700696303 /* Array.swift in Sources */,
+				626654A325F2767000696303 /* Date.swift in Sources */,
+				6266549C25F2767000696303 /* Double.swift in Sources */,
+				6266549225F2767000696303 /* URLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +753,58 @@
 			};
 			name = Release;
 		};
+		6266548325F2765C00696303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WVY7N532MY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DJSwiftHelpers_MacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6266548425F2765C00696303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WVY7N532MY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DJSwiftHelpers_MacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		62DF5062256E99DB00C88FF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -743,6 +889,15 @@
 			buildConfigurations = (
 				621B3C33255D467000A5E77F /* Debug */,
 				621B3C34255D467000A5E77F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6266548525F2765C00696303 /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6266548325F2765C00696303 /* Debug */,
+				6266548425F2765C00696303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
