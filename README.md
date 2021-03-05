@@ -24,18 +24,17 @@ github "ddaddy/DJSwiftHelpers"
 Save and then run:
 
 ``` bash
-$ carthage update --platform ios
+$ carthage update --use-xcframeworks
 ```
 
-Once complete, drag both
+Once complete, drag both (as required)
 
 * Carthage/Build/iOS/DJSwiftHelpers
+* Carthage/Build/iOS/DJSwiftHelpers_Extension
 
 into the `Frameworks, Libraries & Embeded Content` section of your project.
 
-Don't forget to also add the above frameworks to the copy-frameworks
-
-For more details on Cartage and how to use it, check the [Carthage Github](https://github.com/Carthage/Carthage) documentation
+If adding to an extension, select `Do not embed` but also add to your main `iOS` or `watchOS` app and select `Embed & Sign`.
 
 
 ## Extensions Available
