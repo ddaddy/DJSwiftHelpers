@@ -128,6 +128,27 @@ Determines if running inside an app extension or not
 static var isExtension:Bool
 ```
 
+### FileManager
+
+Fetches all contents (files & folders) in a specified file path and all subfolders
+
+```swift
+allContents(path: String) -> [URL]
+```
+
+Fetch contents (files & folders) in a specifies file path, none recursive
+
+```swift
+urls(for directory: FileManager.SearchPathDirectory, skipsHiddenFiles: Bool = true ) -> [URL]?
+urls(for directory: URL, skipsHiddenFiles: Bool = true ) -> [URL]?
+```
+
+Parse a `json` file into the specified object type
+
+```swift
+readJSONFromFile<T: Decodable>(fileURL: URL, type: T.Type) -> T?
+```
+
 ### String
 Truncate a string by removing all characters at the `position`
 
