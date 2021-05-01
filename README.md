@@ -135,6 +135,12 @@ Truncate a string by removing all characters at the `position`
 truncated(limit: Int, position: TruncationPosition = .tail, leader: String = "") -> String
 ```
 
+Delete a prefix if it exists
+
+```swift
+deletingPrefix(_ prefix: String) -> String
+```
+
 Allows you to use [8] subscript to get 1 character from a String
 
 ```swift

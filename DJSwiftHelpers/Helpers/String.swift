@@ -40,6 +40,17 @@ extension String {
             return self.prefix(limit) + leader
         }
     }
+    
+    /**
+     Deletes a prefix string if it exists
+     - Parameters:
+        - prefix: The string to match and delete if it exists at the beginning of a `String`
+     */
+    func deletingPrefix(_ prefix: String) -> String {
+        guard self.hasPrefix(prefix) else { return self }
+        
+        return String(self.dropFirst(prefix.count))
+    }
 }
 
 public
