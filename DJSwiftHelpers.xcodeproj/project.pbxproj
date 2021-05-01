@@ -340,7 +340,7 @@
 		620F6A1D250BB75500B10032 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Dappological Ltd.";
 				TargetAttributes = {
 					620F6A25250BB75500B10032 = {

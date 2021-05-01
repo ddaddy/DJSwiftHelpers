@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "1250"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6266547D25F2765C00696303"
-               BuildableName = "DJSwiftHelpers_MacOS.framework"
+               BuildableName = "DJSwiftHelpers.framework"
                BlueprintName = "DJSwiftHelpers_MacOS"
                ReferencedContainer = "container:DJSwiftHelpers.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6266547D25F2765C00696303"
-            BuildableName = "DJSwiftHelpers_MacOS.framework"
+            BuildableName = "DJSwiftHelpers.framework"
             BlueprintName = "DJSwiftHelpers_MacOS"
             ReferencedContainer = "container:DJSwiftHelpers.xcodeproj">
          </BuildableReference>
