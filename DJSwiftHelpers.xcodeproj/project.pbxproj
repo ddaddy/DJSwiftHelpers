@@ -43,6 +43,8 @@
 		6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C425ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C525ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
+		6249FC4F2678ABB9008AF6CE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249FC4E2678ABB9008AF6CE /* UIView.swift */; };
+		6249FC502678ABC3008AF6CE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249FC4E2678ABB9008AF6CE /* UIView.swift */; };
 		625380722594BCE900C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
 		625380762594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
 		6253807A2594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
@@ -111,6 +113,7 @@
 		620F6A4F250BC1E400B10032 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		6249FC4E2678ABB9008AF6CE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		625380812594CE9B00C58B2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		6266547E25F2765C00696303 /* DJSwiftHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +213,7 @@
 				620F6A49250BBC4B00B10032 /* UIImage.swift */,
 				62D6CDF4255C01F400ABD216 /* UILabel.swift */,
 				620F6A33250BB78200B10032 /* UIStackView.swift */,
+				6249FC4E2678ABB9008AF6CE /* UIView.swift */,
 				620F6A4B250BBCD700B10032 /* UIViewController.swift */,
 				620F6A4F250BC1E400B10032 /* UIWindow.swift */,
 				62D6CDF1255C002B00ABD216 /* URLRequest.swift */,
@@ -438,6 +442,7 @@
 				625380722594BCE900C58B2F /* CLLocationCoordinate2D.swift in Sources */,
 				62D6CDF5255C01F400ABD216 /* UILabel.swift in Sources */,
 				62D6CDE9255BFCCB00ABD216 /* Decodable.swift in Sources */,
+				6249FC4F2678ABB9008AF6CE /* UIView.swift in Sources */,
 				620F6A50250BC1E400B10032 /* UIWindow.swift in Sources */,
 				627631A7255D512F005C09B1 /* DJSwiftHelpers.swift in Sources */,
 				620F6A4C250BBCD700B10032 /* UIViewController.swift in Sources */,
@@ -469,6 +474,7 @@
 				625380762594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */,
 				621B3C2B255D467000A5E77F /* UILabel.swift in Sources */,
 				621B3C2C255D467000A5E77F /* Decodable.swift in Sources */,
+				6249FC502678ABC3008AF6CE /* UIView.swift in Sources */,
 				621B3C2D255D467000A5E77F /* UIWindow.swift in Sources */,
 				621136ED255D5CAC003F8FBF /* DJSwiftHelpers.swift in Sources */,
 				621B3C2E255D467000A5E77F /* UIViewController.swift in Sources */,
