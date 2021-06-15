@@ -36,3 +36,37 @@ extension UIViewController {
         present(alert, animated: true, completion: nil)
     }
 }
+
+public
+extension UIViewController {
+    
+    /**
+     Adds a `UIViewController` as a child controller of a `UIView`
+     - Parameters:
+        - child: The `UIViewController` subclass you wish to add
+        - containerView: The `UIView` to add the view controller too
+     
+     Pins the view controller to each edge of the container view.
+     */
+    func addChild(_ child: UIViewController, in containerView: UIView) {
+        
+        guard containerView.isDescendant(of: view) else { return }
+        
+        addChild(child)
+        containerView.addSubview(child.view)
+        child.view.pinToSuperview()
+        child.didMove(toParent: self)
+    }
+    
+    /**
+     Removes an embeded `UIViewController` from it's container view
+     - Parameters:
+        - child: The `UIViewController` to remove
+     */
+    func removeChild(_ child: UIViewController) {
+        
+        child.willMove(toParent: nil)
+        child.view.removeFromSuperview()
+        child.removeFromParent()
+    }
+}
