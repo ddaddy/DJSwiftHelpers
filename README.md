@@ -297,6 +297,13 @@ Add a background color to a UIStackView
 addBackground(color: UIColor)
 ```
 
+### UIView
+Sets up the autolayout constraints to pin a view to it's superview
+
+```swift
+pinToSuperview(with insets: UIEdgeInsets = .zero, edges: UIRectEdge = .all)
+```
+
 ### UIViewController
 Displays a `UIAlertController` message with an "Ok" cancel button
 
@@ -305,6 +312,14 @@ displayAlert(title:String?, message:String?)
 ```
 ```swift
 displayAlert(title:String?, message:String?, buttonAction:((UIAlertAction)->())?)
+```
+Add's & removes a child `UIViewController` to a continer view
+
+```swift
+addChild(_ child: UIViewController, in containerView: UIView)
+```
+```swift
+removeChild(_ child: UIViewController)
 ```
 
 ### UIWindow
