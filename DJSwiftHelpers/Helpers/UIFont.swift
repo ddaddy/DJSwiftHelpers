@@ -6,9 +6,9 @@
 //  Copyright © 2021 Dappological Ltd. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if !IS_WATCH
 @available(iOS 11.0, *)
 public
 extension UIFont {
@@ -31,4 +31,4 @@ extension UIFont {
         return metrics.scaledFont(for: font)
     }
 }
-#endif
+#endif // os(iOS)

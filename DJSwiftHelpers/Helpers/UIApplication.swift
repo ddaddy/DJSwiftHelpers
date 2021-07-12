@@ -6,6 +6,7 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 #if !IS_EXTENSION
@@ -61,4 +62,5 @@ extension UIApplication {
         self.shared.keyWindow?.rootViewController?.dismiss(animated: animated, completion: completion)
     }
 }
-#endif
+#endif // !IS_EXTENSION
+#endif // os(iOS)

@@ -6,6 +6,7 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public
@@ -27,3 +28,4 @@ extension UIDevice {
         return UIDevice.current.userInterfaceIdiom == .carPlay
     }
 }
+#endif // os(iOS)

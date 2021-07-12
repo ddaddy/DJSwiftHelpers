@@ -6,6 +6,7 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 #if !IS_EXTENSION
@@ -23,4 +24,5 @@ extension UIWindow {
         }
     }
 }
-#endif
+#endif // !IS_EXTENSION
+#endif // os(iOS)

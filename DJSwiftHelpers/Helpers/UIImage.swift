@@ -6,6 +6,7 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public
@@ -63,3 +64,4 @@ extension UIImage {
         return newImage!
     }
 }
+#endif // os(iOS)

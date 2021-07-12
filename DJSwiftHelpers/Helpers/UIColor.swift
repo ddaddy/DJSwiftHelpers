@@ -6,6 +6,7 @@
 //  Copyright © 2020 Darren Jones. All rights reserved.
 //
 
+#if os(iOS) || os(watchOS)
 import UIKit
 
 public
@@ -43,3 +44,4 @@ extension UIColor {
         return nil
     }
 }
+#endif // os(iOS) || os(watchOS)
