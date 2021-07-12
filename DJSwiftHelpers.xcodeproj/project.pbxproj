@@ -166,6 +166,7 @@
 		620F6A1C250BB75500B10032 = {
 			isa = PBXGroup;
 			children = (
+				620F6A31250BB76900B10032 /* Helpers */,
 				620F6A28250BB75500B10032 /* DJSwiftHelpers */,
 				6266547F25F2765C00696303 /* DJSwiftHelpers_MacOS */,
 				620F6A27250BB75500B10032 /* Products */,
@@ -186,7 +187,6 @@
 		620F6A28250BB75500B10032 /* DJSwiftHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				620F6A31250BB76900B10032 /* Helpers */,
 				620F6A29250BB75500B10032 /* DJSwiftHelpers.h */,
 				620F6A2A250BB75500B10032 /* Info.plist */,
 			);
@@ -222,7 +222,8 @@
 				620F6A4D250BBCE900B10032 /* UserDefaults.swift */,
 				62D6CDE8255BFCCB00ABD216 /* Decodable.swift */,
 			);
-			path = Helpers;
+			name = Helpers;
+			path = Sources/DJSwiftHelpers;
 			sourceTree = "<group>";
 		};
 		6266547F25F2765C00696303 /* DJSwiftHelpers_MacOS */ = {
