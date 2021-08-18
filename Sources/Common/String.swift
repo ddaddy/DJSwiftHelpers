@@ -173,3 +173,27 @@ extension StringProtocol {
      */
     var lines: [SubSequence] { split(whereSeparator: \.isNewline) }
 }
+
+public
+extension String {
+    
+    /**
+     Returns a string that appears between 2 strings
+     - Parameters:
+        - from: The first string to find
+        - to: The string to scan up to
+     
+     If `from` or `to` are `nil`, it will return from start or up to end of string
+     */
+    func slice(from: String? = nil, to: String? = nil) -> String? {
+        var rangeFrom = range(of: from ?? "%$£somethingthatshouldntappearinthestring£$%")?.upperBound
+        if (from == nil) { rangeFrom = startIndex }
+        guard let rangeFrom = rangeFrom else { return nil }
+        
+        var rangeTo = self[rangeFrom...].range(of: to ?? "%$£somethingthatshouldntappearinthestring£$%")?.lowerBound
+        if (to == nil) { rangeTo = endIndex }
+        guard let rangeTo = rangeTo else { return nil }
+        
+        return String(self[rangeFrom..<rangeTo])
+    }
+}

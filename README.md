@@ -216,6 +216,12 @@ Splits a string into an array of lines
 var lines: [SubSequence]
 ```
 
+Returns a string that appears between 2 strings
+
+```swift
+func slice(from: String? = nil, to: String? = nil) -> String?
+```
+
 ### UIApplication
 
 Return the top most ViewController regardless if embeded in a navigation stack or not
