@@ -44,4 +44,16 @@ extension UIColor {
         return nil
     }
 }
+
+public
+extension UIColor {
+    
+    /**
+     Returns a UIColor that is the best opposite of another colour
+     */
+    var inverted: UIColor {
+        var a: CGFloat = 0.0, r: CGFloat = 0.0, g: CGFloat = 0.0, b: CGFloat = 0.0
+        return getRed(&r, green: &g, blue: &b, alpha: &a) ? UIColor(red: 1.0-r, green: 1.0-g, blue: 1.0-b, alpha: a) : .black
+    }
+}
 #endif // os(iOS) || os(watchOS)

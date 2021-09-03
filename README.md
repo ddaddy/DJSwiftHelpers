@@ -249,6 +249,12 @@ Convert a hex string to a `UIColor`
 init?(hex: String)
 ```
 
+Find the opposite colour of a `UIColor`
+
+```swift
+var inverted: UIColor
+```
+
 ### UIDevice
 
 ```swift
