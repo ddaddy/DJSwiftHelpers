@@ -26,12 +26,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "DJSwiftHelpers-Extension",
-            path: "./Sources/Common/"
+            path: "Sources/Common/"
         ),
         .target(
             name: "DJSwiftHelpers",
-            dependencies: ["DJSwiftHelpers-Extension"],
-            path: "./Sources/Non_Extension/"
+            path: "Sources/Non_Extension/",
+            sources: ["../Common/", "../Non_Extension/"]
         )
     ]
 )
