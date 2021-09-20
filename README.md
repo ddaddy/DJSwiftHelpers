@@ -149,6 +149,14 @@ Parse a `json` file into the specified object type
 readJSONFromFile<T: Decodable>(fileURL: URL, type: T.Type) -> T?
 ```
 
+### Locale
+
+Return the emoji flag for the given Locale
+
+```swift
+var emojiFlag: String
+```
+
 ### String
 Truncate a string by removing all characters at the `position`
 

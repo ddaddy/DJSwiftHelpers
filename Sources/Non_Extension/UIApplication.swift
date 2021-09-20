@@ -16,7 +16,7 @@ extension UIApplication {
     /**
      Returns the top most ViewController regardless if embeded in a navigation stack or not
      */
-    class func getTopViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    class func getTopViewController(base: UIViewController? = UIWindow.key?.rootViewController) -> UIViewController? {
 
         if let nav = base as? UINavigationController {
             return getTopViewController(base: nav.visibleViewController)
@@ -51,7 +51,7 @@ extension UIApplication {
     class func dismisstoRoot(animated:Bool, completion:(() -> Void)? = nil) {
         
         // On iOS 12, calling dismiss when there is nothing to dismiss does not call the completion block, so we have to see if we are already at base level
-        guard self.shared.keyWindow?.rootViewController?.presentedViewController != nil else {
+        guard UIWindow.key?.rootViewController?.presentedViewController != nil else {
             
             // rootViewController is on top, so nothing to dismiss
             completion?()
@@ -59,7 +59,7 @@ extension UIApplication {
         }
         
         // We have views on top of the rootViewController
-        self.shared.keyWindow?.rootViewController?.dismiss(animated: animated, completion: completion)
+        UIWindow.key?.rootViewController?.dismiss(animated: animated, completion: completion)
     }
 }
 #endif // !IS_EXTENSION
