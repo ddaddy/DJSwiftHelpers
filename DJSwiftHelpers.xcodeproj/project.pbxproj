@@ -91,6 +91,7 @@
 		62DF50AD256E9AA800C88FF7 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C950256D6FF8003F3A67 /* URLSession.swift */; };
 		62DF50B1256E9AAA00C88FF7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
 		62DF50B5256E9AAD00C88FF7 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
+		62E392382710620F008C9C89 /* UIActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E392372710620F008C9C89 /* UIActivity.swift */; };
 		62EC880526F8DACE00211A6A /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC880426F8DACE00211A6A /* Locale.swift */; };
 		62EC880626F8DACE00211A6A /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC880426F8DACE00211A6A /* Locale.swift */; };
 		62EC880726F8DACE00211A6A /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC880426F8DACE00211A6A /* Locale.swift */; };
@@ -131,6 +132,7 @@
 		62D6CDF4255C01F400ABD216 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		62DEDA482636D40A00771544 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		62DF505D256E99DB00C88FF7 /* DJSwiftHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E392372710620F008C9C89 /* UIActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivity.swift; sourceTree = "<group>"; };
 		62EC880426F8DACE00211A6A /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +243,7 @@
 		6267B87626A07017009A31B1 /* Non_Extension */ = {
 			isa = PBXGroup;
 			children = (
+				62E392372710620F008C9C89 /* UIActivity.swift */,
 				6267B87826A07017009A31B1 /* UIApplication.swift */,
 				6267B87726A07017009A31B1 /* UIWindow.swift */,
 			);
@@ -452,6 +455,7 @@
 				62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */,
 				6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */,
 				62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */,
+				62E392382710620F008C9C89 /* UIActivity.swift in Sources */,
 				62DEDA492636D40A00771544 /* FileManager.swift in Sources */,
 				62754BA625E691E200F2F489 /* Codable.swift in Sources */,
 				6267B87926A07017009A31B1 /* UIWindow.swift in Sources */,

@@ -157,6 +157,19 @@ Return the emoji flag for the given Locale
 var emojiFlag: String
 ```
 
+### SafariActivityView
+
+A SwiftUI view to display the share sheet with `Open in Safari`
+
+```swift
+Example:
+
+.background(
+	// Share button action
+	SafariActivityView(isPresented: $activityPresented, url: url)
+)
+```
+
 ### String
 Truncate a string by removing all characters at the `position`
 
