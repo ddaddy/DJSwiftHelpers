@@ -31,6 +31,12 @@ struct SafariActivityView: UIViewControllerRepresentable {
     @Binding public var isPresented: Bool
     public var url: URL
     
+    public init(isPresented: Binding<Bool>, url: URL) {
+        
+        self._isPresented = isPresented
+        self.url = url
+    }
+    
     public func makeUIViewController(context: Context) -> UIViewController {
         UIViewController()
     }
