@@ -149,6 +149,10 @@ Parse a `json` file into the specified object type
 readJSONFromFile<T: Decodable>(fileURL: URL, type: T.Type) -> T?
 ```
 
+### Gradient
+
+A `UIView` subclass with a gradient background. Can be used in a storyboard as it supports `IBDesignable`.
+
 ### Locale
 
 Return the emoji flag for the given Locale

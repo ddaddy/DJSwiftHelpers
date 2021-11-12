@@ -68,6 +68,7 @@
 		62754BA725E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
 		62754BA825E691E200F2F489 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62754BA525E691E200F2F489 /* Codable.swift */; };
 		627631A7255D512F005C09B1 /* DJSwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */; };
+		62BFAA94273ECDE600DAC879 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BFAA93273ECDE600DAC879 /* Gradient.swift */; };
 		62C4485225A2208F0014F44B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C4485125A2208F0014F44B /* UIFont.swift */; };
 		62C4485325A2208F0014F44B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C4485125A2208F0014F44B /* UIFont.swift */; };
 		62C4485425A2208F0014F44B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C4485125A2208F0014F44B /* UIFont.swift */; };
@@ -124,6 +125,7 @@
 		6267B87826A07017009A31B1 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		62754BA525E691E200F2F489 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJSwiftHelpers.swift; sourceTree = "<group>"; };
+		62BFAA93273ECDE600DAC879 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		62C4485125A2208F0014F44B /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		62D6CDE8255BFCCB00ABD216 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		62D6CDEB255BFDA900ABD216 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				625380812594CE9B00C58B2F /* Double.swift */,
 				627631A6255D512F005C09B1 /* DJSwiftHelpers.swift */,
 				62DEDA482636D40A00771544 /* FileManager.swift */,
+				62BFAA93273ECDE600DAC879 /* Gradient.swift */,
 				62EC880426F8DACE00211A6A /* Locale.swift */,
 				620F6A34250BB78200B10032 /* String.swift */,
 				620F6A36250BB78200B10032 /* UIColor.swift */,
@@ -442,6 +445,7 @@
 				6267B87C26A07017009A31B1 /* UIApplication.swift in Sources */,
 				620F6A39250BB78200B10032 /* String.swift in Sources */,
 				62D6CDF2255C002B00ABD216 /* URLRequest.swift in Sources */,
+				62BFAA94273ECDE600DAC879 /* Gradient.swift in Sources */,
 				620F6A48250BBC2F00B10032 /* UIDevice.swift in Sources */,
 				6206C951256D6FF8003F3A67 /* URLSession.swift in Sources */,
 				620F6A37250BB78200B10032 /* Array.swift in Sources */,
