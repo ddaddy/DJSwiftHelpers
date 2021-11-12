@@ -151,7 +151,21 @@ readJSONFromFile<T: Decodable>(fileURL: URL, type: T.Type) -> T?
 
 ### Gradient
 
-A `UIView` subclass with a gradient background. Can be used in a storyboard as it supports `IBDesignable`.
+A `UIView` subclass with a gradient background.
+
+Can be used in a storyboard as it supports `IBDesignable` however to use `IBDesignable` from an external framework you need to add this small class to your project:
+
+```swift
+@IBDesignable
+class GradientView: Gradient {
+    @IBInspectable override var startColor: UIColor {get { return super.startColor }set { super.startColor = newValue }}
+    @IBInspectable override var endColor: UIColor {get { return super.endColor }set { super.endColor = newValue }}
+    @IBInspectable override var startLocation: Double {get { return super.startLocation }set { super.startLocation = newValue }}
+    @IBInspectable override var endLocation: Double {get { return super.endLocation }set { super.endLocation = newValue }}
+    @IBInspectable override var horizontalMode: Bool {get { return super.horizontalMode }set { super.horizontalMode = newValue }}
+    @IBInspectable override var diagonalMode: Bool {get { return super.diagonalMode }set { super.diagonalMode = newValue }}
+}
+```
 
 ### Locale
 
