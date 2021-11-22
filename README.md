@@ -40,6 +40,12 @@ If adding to an extension, select `Do not embed` but also add to your main `iOS`
 ## Extensions Available
 
 ### Array
+Removes an element from an `Array`. If the element occurs multiple times in the array, only the first element will be removed.
+
+```swift
+remove(element: Element)
+```
+
 Split an `Array` into multiple arrays of size
 
 ```swift

@@ -9,6 +9,23 @@
 import Foundation
 
 public
+extension Array where Element: Equatable {
+    
+    /**
+     Remove an element from an array
+     - Parameters:
+        - element: The element to remove
+     
+     If the array has more than 1 of the same element, then only the first will be removed
+     */
+    mutating func remove(element: Element) {
+        if let i = self.firstIndex(of: element) {
+            self.remove(at: i)
+        }
+    }
+}
+
+public
 extension Array {
     
     /**
