@@ -361,6 +361,12 @@ Sets up the autolayout constraints to pin a view to it's superview
 pinToSuperview(with insets: UIEdgeInsets = .zero, edges: UIRectEdge = .all)
 ```
 
+Add a border to the insied of a `UIView` at a specific edge
+
+```swift
+addBorder(_ edge: UIRectEdge, color: UIColor, thickness: CGFloat)
+```
+
 ### UIViewController
 Displays a `UIAlertController` message with an "Ok" cancel button
 

@@ -38,5 +38,41 @@ extension UIView {
             trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -insets.right).isActive = true
         }
     }
+    
+    /**
+     Add a border to the insied of a `UIView` at a specific edge
+     - Parameters:
+        - edge: A `UIEdgeRect` of the edge you want to add the border line
+        - color: The color of the border line
+        - thickness: The thickness of the border line
+     */
+    func addBorder(_ edge: UIRectEdge, color: UIColor, thickness: CGFloat) {
+        let subview = UIView()
+        subview.translatesAutoresizingMaskIntoConstraints = false
+        subview.backgroundColor = color
+        self.addSubview(subview)
+        switch edge {
+        case .top, .bottom:
+            subview.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
+            subview.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0).isActive = true
+            subview.heightAnchor.constraint(equalToConstant: thickness).isActive = true
+            if edge == .top {
+                subview.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+            } else {
+                subview.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+            }
+        case .left, .right:
+            subview.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+            subview.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+            subview.widthAnchor.constraint(equalToConstant: thickness).isActive = true
+            if edge == .left {
+                subview.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
+            } else {
+                subview.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0).isActive = true
+            }
+        default:
+            break
+        }
+    }
 }
 #endif // os(iOS)
