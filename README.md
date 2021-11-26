@@ -46,6 +46,15 @@ Removes an element from an `Array`. If the element occurs multiple times in the 
 remove(element: Element)
 ```
 
+Moves an element to a new index
+
+```swift
+move(_ element: Element, to newIndex: Index)
+```
+```swift
+move(from oldIndex: Index, to newIndex: Index)
+```
+
 Split an `Array` into multiple arrays of size
 
 ```swift

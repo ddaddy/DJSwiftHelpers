@@ -23,6 +23,35 @@ extension Array where Element: Equatable {
             self.remove(at: i)
         }
     }
+    
+    /**
+     Moves an element to a new index within the Array
+     - Parameters:
+        - element: The element to move
+        - newIndex: The index to place the elemnt within this Array
+     */
+    mutating func move(_ element: Element, to newIndex: Index) {
+        if let oldIndex: Int = self.firstIndex(of: element) { self.move(from: oldIndex, to: newIndex) }
+    }
+}
+
+public
+extension Array
+{
+    
+    /**
+     Moves the element at a specific index to a new index
+     - Parameters:
+        - oldIndex: The index of the element to move
+        - newIndex: The index to place the element
+     */
+    mutating func move(from oldIndex: Index, to newIndex: Index) {
+        // Don't work for free and use swap when indices are next to each other - this
+        // won't rebuild array and will be super efficient.
+        if oldIndex == newIndex { return }
+        if abs(newIndex - oldIndex) == 1 { return self.swapAt(oldIndex, newIndex) }
+        self.insert(self.remove(at: oldIndex), at: newIndex)
+    }
 }
 
 public
