@@ -7,6 +7,8 @@
 //
 
 #if os(iOS)
+// SwiftUI isn't available in the armv7 architecture
+#if arch(arm64) || arch(x86_64)
 import UIKit
 import SwiftUI
 
@@ -118,4 +120,5 @@ class SafariActivity: UIActivity {
     }
 }
 #endif // !IS_EXTENSION
+#endif // arch(arm64) || arch(x86_64)
 #endif // os(iOS)

@@ -113,6 +113,8 @@ Deduct one `Date` from another
 
 Converts an iso8601 string with or without milliseconds `2020-11-11T11:39:00Z` ro `2020-11-11T11:39:00.000Z`
 
+**WARNING! These are expensive operations so probably best not to use in a loop**
+
 ```swift
 var iso8601: String
 ```

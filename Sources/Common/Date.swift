@@ -81,11 +81,17 @@ extension Date {
 public
 extension String {
     
+    /**
+     WARNING: This is an expensive operation. If using in a loop, find another way.
+     */
     @available(iOS 10, *)
     @available(watchOS 3.0, *)
     @available(OSX 10.12, *)
     var iso8601: Date? { return Formatter.iso8601.date(from: self) }
     
+    /**
+     WARNING: This is an expensive operation. If using in a loop, find another way.
+     */
     @available(iOS 11, *)
     @available(watchOS 4.0, *)
     @available(OSX 10.13, *)
