@@ -14,12 +14,21 @@ public
 extension URLSession {
     
     static var selfSignedSSLSession:URLSession = SelfSignedURLSession().session
+    static func selfSignedSSLSession(config: URLSessionConfiguration) -> URLSession {
+        return SelfSignedURLSession(config: config).session
+    }
 }
 
 @available(iOS 10.3, *)
 @available(watchOS 3.3, *)
 fileprivate
 class SelfSignedURLSession:NSObject, URLSessionDelegate {
+    
+    public var config: URLSessionConfiguration = .default
+    
+    init(config: URLSessionConfiguration = .default) {
+        self.config = config
+    }
     
     /**
      A URLSession that will bypass an SSL certificate check.
@@ -28,7 +37,6 @@ class SelfSignedURLSession:NSObject, URLSessionDelegate {
      Be careful where you use this! It can be dangerous.
      */
     var session:URLSession {
-        let config = URLSessionConfiguration.default
         return URLSession(configuration: config, delegate: self, delegateQueue: .main)
     }
     
