@@ -278,6 +278,14 @@ Returns a string that appears between 2 strings
 func slice(from: String? = nil, to: String? = nil) -> String?
 ```
 
+### Task
+
+Creates a recurring `Task` that executes until success
+
+```swift
+static func retrying(priority: TaskPriority? = nil, maxRetryCount: Int = .max, retryDelay: TimeInterval = 1, operation: @Sendable @escaping () async throws -> Success) -> Task
+```
+
 ### UIApplication
 
 Return the top most ViewController regardless if embeded in a navigation stack or not
