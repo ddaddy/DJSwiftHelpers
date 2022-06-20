@@ -30,8 +30,13 @@ let package = Package(
         ),
         .target(
             name: "DJSwiftHelpers",
-            path: "Sources/Non_Extension/",
-            sources: ["../Common/", "../Non_Extension/"]
+            dependencies: [
+                // To expose DJSwiftHelpers-Extension methods to the DJSwiftHelpers taget,
+                // so they work with the 1 import,
+                // we need to use the Exports.swift file with @_exported
+                "DJSwiftHelpers-Extension"
+            ],
+            path: "Sources/Non_Extension/"
         )
     ]
 )
