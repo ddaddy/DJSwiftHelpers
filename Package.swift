@@ -17,25 +17,22 @@ let package = Package(
             targets: ["DJSwiftHelpers"]
         ),
         .library(
-            name: "DJSwiftHelpers-Extension",
-            targets: ["DJSwiftHelpers-Extension"]
+            name: "DJSwiftHelpers_UIKit",
+            targets: ["DJSwiftHelpers_UIKit"]
         )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "DJSwiftHelpers-Extension",
-            path: "Sources/Common/"
+            name: "DJSwiftHelpers",
+            path: "Sources/Common/",
+            linkerSettings: [
+                .unsafeFlags(["-Xlinker", "-no_application_extension"])
+            ]
         ),
         .target(
-            name: "DJSwiftHelpers",
-            dependencies: [
-                // To expose DJSwiftHelpers-Extension methods to the DJSwiftHelpers taget,
-                // so they work with the 1 import,
-                // we need to use the Exports.swift file with @_exported
-                "DJSwiftHelpers-Extension"
-            ],
+            name: "DJSwiftHelpers_UIKit",
             path: "Sources/Non_Extension/"
         )
     ]
