@@ -4,6 +4,12 @@
 
 DJSwiftHelpers is a Swift library containing useful Swift extensions. It allows you to perform many tasks easily.
 
+## Integrate using SPM
+
+Add the package `git@github.com:ddaddy/DJSwiftHelpers.git` to your project.
+
+For most helpers you can `import DJSwiftHelpers` however for additional `UIKit` helpers that are not extension friendly, also `import DJSwiftHelpers_UIKit`
+
 ## Integrate using Carthage
 
 Install [Carthage](https://github.com/Carthage/Carthage#installing-carthage) if not already installed 
