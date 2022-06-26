@@ -41,3 +41,16 @@ extension UserDefaults {
         self.synchronize()
     }
 }
+
+public
+extension UserDefaults {
+    
+    /**
+     Delete all `UserDefault`'s for the containing `bundleIdentifier`
+     */
+    static func resetDefaults() {
+        if let bundleID = Bundle.main.bundleIdentifier {
+            UserDefaults.standard.removePersistentDomain(forName: bundleID)
+        }
+    }
+}

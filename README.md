@@ -460,6 +460,12 @@ setOrDelete(value:String?, forKey key:String)
 setOrDelete(value:Int?, forKey key:String)
 ```
 
+Delete all `UserDefault`'s for the containing `bundleIdentifier`
+
+```swift
+func resetDefaults()
+```
+
 ## License	
 
 Copyright (c) 2020 Darren Jones (Dappological Ltd.)
