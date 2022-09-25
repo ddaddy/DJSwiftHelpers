@@ -33,6 +33,21 @@ extension UIImage {
         }
         return true
     }
+    
+#if !IS_EXTENSION
+    /**
+     Saves a `UIImage` to the temporary directory as a `.png` and returns the URL
+     - Parameters:
+        - named: The filename to use (`.png` will automatically be appended)
+     */
+    func tempURLForImage(named name: String) -> URL? {
+        
+        let fileManager = FileManager.default
+        let url = fileManager.temporaryDirectory.appendingPathComponent("\(name).png")
+        guard self.saveAsPNG(path: url) else { return nil }
+        return url
+    }
+#endif
 }
 
 public

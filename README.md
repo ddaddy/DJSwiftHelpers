@@ -353,6 +353,15 @@ Convert a String to Data then save it to the given URL path
 ```swift
 saveAsPNG(path:URL) -> Bool
 ```
+
+Save an image to a temporary file
+
+```swift
+tempURLForImage(named name: String) -> URL?
+```
+
+Resize an image
+
 ```swift
 resize(width: CGFloat) -> UIImage
 resize(height: CGFloat) -> UIImage
