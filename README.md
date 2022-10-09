@@ -198,6 +198,15 @@ Return the emoji flag for the given Locale
 var emojiFlag: String
 ```
 
+### NSMutableAttributedString
+
+Change the colour of certain text within an `NSMutableAttributedString`
+
+```swift
+func setColorForText(textToFind: String, withColor color: UIColor)
+```
+
+
 ### SafariActivityView
 
 A SwiftUI view to display the share sheet with `Open in Safari`

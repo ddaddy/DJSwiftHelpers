@@ -28,6 +28,7 @@
 		6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C425ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C525ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
+		6241494328F338EB00161522 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6241494228F338EB00161522 /* NSMutableAttributedString.swift */; };
 		625380722594BCE900C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
 		625380762594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
 		6253807A2594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
@@ -104,6 +105,7 @@
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		6241494228F338EB00161522 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		625380812594CE9B00C58B2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		6266547E25F2765C00696303 /* DJSwiftHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				62BFAA93273ECDE600DAC879 /* Gradient.swift */,
+				6241494228F338EB00161522 /* NSMutableAttributedString.swift */,
 				62E392372710620F008C9C89 /* UIActivity.swift */,
 				6267B87826A07017009A31B1 /* UIApplication.swift */,
 				6278E8432861A8590004DF29 /* UIColor.swift */,
@@ -438,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6241494328F338EB00161522 /* NSMutableAttributedString.swift in Sources */,
 				62F315EB27A186F0003D2906 /* Task.swift in Sources */,
 				6267B87C26A07017009A31B1 /* UIApplication.swift in Sources */,
 				620F6A39250BB78200B10032 /* String.swift in Sources */,
