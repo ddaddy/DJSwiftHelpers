@@ -8,7 +8,7 @@ DJSwiftHelpers is a Swift library containing useful Swift extensions. It allows 
 
 Add the package `git@github.com:ddaddy/DJSwiftHelpers.git` to your project.
 
-For most helpers you can `import DJSwiftHelpers` however for additional `UIKit` helpers that are not extension friendly, also `import DJSwiftHelpers_UIKit`
+For most helpers you can `import DJSwiftHelpers` however for additional `UIKit` or `SwiftUI` helpers that are not extension friendly, also `import DJSwiftHelpers_UIKit` or `import DJSwiftHelpers_SwiftUI`
 
 ## Integrate using Carthage
 
@@ -33,10 +33,11 @@ Save and then run:
 $ carthage update --use-xcframeworks
 ```
 
-Once complete, drag both (as required)
+Once complete, drag libraries as required
 
 * Carthage/Build/iOS/DJSwiftHelpers
 * Carthage/Build/iOS/DJSwiftHelpers_Extension
+* Carthage/Build/iOS/DJSwiftHelpers_SwiftUI
 
 into the `Frameworks, Libraries & Embeded Content` section of your project.
 
@@ -204,20 +205,6 @@ Change the colour of certain text within an `NSMutableAttributedString`
 
 ```swift
 func setColorForText(textToFind: String, withColor color: UIColor)
-```
-
-
-### SafariActivityView
-
-A SwiftUI view to display the share sheet with `Open in Safari`
-
-```swift
-Example:
-
-.background(
-	// Share button action
-	SafariActivityView(isPresented: $activityPresented, url: url)
-)
 ```
 
 ### String
@@ -482,6 +469,28 @@ Delete all `UserDefault`'s for the containing `bundleIdentifier`
 
 ```swift
 func resetDefaults()
+```
+
+## SwiftUI
+### SafariActivityView
+
+A SwiftUI view to display the share sheet with `Open in Safari`
+
+```swift
+Example:
+
+.background(
+	// Share button action
+	SafariActivityView(isPresented: $activityPresented, url: url)
+)
+```
+
+### .onFirstAppear
+
+A SwiftUI view modifier that executes a block of code only once during the first display of the view
+
+```swift
+.onFirstAppear(_ action: @escaping () -> ()) -> some View
 ```
 
 ## License	

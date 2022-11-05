@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "620F6A25250BB75500B10032"
-               BuildableName = "DJSwiftHelpers.framework"
-               BlueprintName = "DJSwiftHelpers"
+               BlueprintIdentifier = "622E8B692916848F009F7A8D"
+               BuildableName = "DJSwiftHelpers_SwiftUI.framework"
+               BlueprintName = "DJSwiftHelpers_SwiftUI_WatchOS"
                ReferencedContainer = "container:DJSwiftHelpers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "620F6A25250BB75500B10032"
-            BuildableName = "DJSwiftHelpers.framework"
-            BlueprintName = "DJSwiftHelpers"
+            BlueprintIdentifier = "622E8B692916848F009F7A8D"
+            BuildableName = "DJSwiftHelpers_SwiftUI.framework"
+            BlueprintName = "DJSwiftHelpers_SwiftUI_WatchOS"
             ReferencedContainer = "container:DJSwiftHelpers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

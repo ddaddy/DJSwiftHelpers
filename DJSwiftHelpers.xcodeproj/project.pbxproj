@@ -28,8 +28,13 @@
 		6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C425ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C525ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
-		622E8B3829167B14009F7A8D /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3729167B14009F7A8D /* OnFirstAppear.swift */; };
-		622E8B3A29167B79009F7A8D /* OpenInSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3929167B79009F7A8D /* OpenInSafari.swift */; };
+		622E8B4729167E54009F7A8D /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3729167B14009F7A8D /* OnFirstAppear.swift */; };
+		622E8B4829167E57009F7A8D /* OpenInSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3929167B79009F7A8D /* OpenInSafari.swift */; };
+		622E8B4A2916818A009F7A8D /* DJSwiftHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 622E8B492916818A009F7A8D /* DJSwiftHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		622E8B5F291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 622E8B5E291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		622E8B63291683EF009F7A8D /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3729167B14009F7A8D /* OnFirstAppear.swift */; };
+		622E8B722916851E009F7A8D /* DJSwiftHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 622E8B712916851E009F7A8D /* DJSwiftHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		622E8B7329168572009F7A8D /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3729167B14009F7A8D /* OnFirstAppear.swift */; };
 		6241494328F338EB00161522 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6241494228F338EB00161522 /* NSMutableAttributedString.swift */; };
 		625380722594BCE900C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
 		625380762594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
@@ -108,6 +113,12 @@
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		622E8B3729167B14009F7A8D /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
 		622E8B3929167B79009F7A8D /* OpenInSafari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInSafari.swift; sourceTree = "<group>"; };
+		622E8B4029167E34009F7A8D /* DJSwiftHelpers_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		622E8B492916818A009F7A8D /* DJSwiftHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DJSwiftHelpers.h; path = DJSwiftHelpers/DJSwiftHelpers.h; sourceTree = "<group>"; };
+		622E8B5C291683C1009F7A8D /* DJSwiftHelpers_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		622E8B5E291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJSwiftHelpers_SwiftUI_MacOS.h; sourceTree = "<group>"; };
+		622E8B6A2916848F009F7A8D /* DJSwiftHelpers_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		622E8B712916851E009F7A8D /* DJSwiftHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DJSwiftHelpers.h; path = DJSwiftHelpers/DJSwiftHelpers.h; sourceTree = "<group>"; };
 		6241494228F338EB00161522 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		625380812594CE9B00C58B2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -152,6 +163,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		622E8B3D29167E34009F7A8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B59291683C1009F7A8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B672916848F009F7A8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6266547B25F2765C00696303 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,11 +204,14 @@
 		620F6A1C250BB75500B10032 = {
 			isa = PBXGroup;
 			children = (
+				622E8B492916818A009F7A8D /* DJSwiftHelpers.h */,
+				622E8B712916851E009F7A8D /* DJSwiftHelpers.h */,
 				622E8B36291679A8009F7A8D /* SwiftUI */,
 				6267B87626A07017009A31B1 /* Non_Extension */,
 				620F6A31250BB76900B10032 /* Common */,
 				620F6A28250BB75500B10032 /* DJSwiftHelpers */,
 				6266547F25F2765C00696303 /* DJSwiftHelpers_MacOS */,
+				622E8B5D291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS */,
 				620F6A27250BB75500B10032 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -188,6 +223,9 @@
 				621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */,
 				62DF505D256E99DB00C88FF7 /* DJSwiftHelpers.framework */,
 				6266547E25F2765C00696303 /* DJSwiftHelpers.framework */,
+				622E8B4029167E34009F7A8D /* DJSwiftHelpers_SwiftUI.framework */,
+				622E8B5C291683C1009F7A8D /* DJSwiftHelpers_SwiftUI.framework */,
+				622E8B6A2916848F009F7A8D /* DJSwiftHelpers_SwiftUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +274,14 @@
 			path = Sources/SwiftUI;
 			sourceTree = "<group>";
 		};
+		622E8B5D291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				622E8B5E291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS.h */,
+			);
+			path = DJSwiftHelpers_SwiftUI_MacOS;
+			sourceTree = "<group>";
+		};
 		6266547F25F2765C00696303 /* DJSwiftHelpers_MacOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +327,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				621B3C1F255D467000A5E77F /* DJSwiftHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B3B29167E34009F7A8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622E8B4A2916818A009F7A8D /* DJSwiftHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B57291683C1009F7A8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622E8B5F291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B652916848F009F7A8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622E8B722916851E009F7A8D /* DJSwiftHelpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +409,60 @@
 			productReference = 621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		622E8B3F29167E34009F7A8D /* DJSwiftHelpers_SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622E8B4629167E34009F7A8D /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_SwiftUI" */;
+			buildPhases = (
+				622E8B3B29167E34009F7A8D /* Headers */,
+				622E8B3C29167E34009F7A8D /* Sources */,
+				622E8B3D29167E34009F7A8D /* Frameworks */,
+				622E8B3E29167E34009F7A8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJSwiftHelpers_SwiftUI;
+			productName = DJSwiftHelpers_SwiftUI;
+			productReference = 622E8B4029167E34009F7A8D /* DJSwiftHelpers_SwiftUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		622E8B5B291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622E8B60291683C1009F7A8D /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_SwiftUI_MacOS" */;
+			buildPhases = (
+				622E8B57291683C1009F7A8D /* Headers */,
+				622E8B58291683C1009F7A8D /* Sources */,
+				622E8B59291683C1009F7A8D /* Frameworks */,
+				622E8B5A291683C1009F7A8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJSwiftHelpers_SwiftUI_MacOS;
+			productName = DJSwiftHelpers_SwiftUI_MacOS;
+			productReference = 622E8B5C291683C1009F7A8D /* DJSwiftHelpers_SwiftUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		622E8B692916848F009F7A8D /* DJSwiftHelpers_SwiftUI_WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622E8B6E2916848F009F7A8D /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_SwiftUI_WatchOS" */;
+			buildPhases = (
+				622E8B652916848F009F7A8D /* Headers */,
+				622E8B662916848F009F7A8D /* Sources */,
+				622E8B672916848F009F7A8D /* Frameworks */,
+				622E8B682916848F009F7A8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJSwiftHelpers_SwiftUI_WatchOS;
+			productName = DJSwiftHelpers_SwiftUI_WatchOS;
+			productReference = 622E8B6A2916848F009F7A8D /* DJSwiftHelpers_SwiftUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6266547D25F2765C00696303 /* DJSwiftHelpers_MacOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6266548525F2765C00696303 /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_MacOS" */;
@@ -381,12 +505,21 @@
 		620F6A1D250BB75500B10032 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Dappological Ltd.";
 				TargetAttributes = {
 					620F6A25250BB75500B10032 = {
 						CreatedOnToolsVersion = 11.7;
 						LastSwiftMigration = 1170;
+					};
+					622E8B3F29167E34009F7A8D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					622E8B5B291683C1009F7A8D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					622E8B692916848F009F7A8D = {
+						CreatedOnToolsVersion = 14.1;
 					};
 					6266547D25F2765C00696303 = {
 						CreatedOnToolsVersion = 12.4;
@@ -410,9 +543,12 @@
 			projectRoot = "";
 			targets = (
 				620F6A25250BB75500B10032 /* DJSwiftHelpers */,
-				621B3C1D255D467000A5E77F /* DJSwiftHelpers_Extension */,
 				62DF505C256E99DB00C88FF7 /* DJSwiftHelpers_Watch */,
 				6266547D25F2765C00696303 /* DJSwiftHelpers_MacOS */,
+				621B3C1D255D467000A5E77F /* DJSwiftHelpers_Extension */,
+				622E8B3F29167E34009F7A8D /* DJSwiftHelpers_SwiftUI */,
+				622E8B5B291683C1009F7A8D /* DJSwiftHelpers_SwiftUI_MacOS */,
+				622E8B692916848F009F7A8D /* DJSwiftHelpers_SwiftUI_WatchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -426,6 +562,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		621B3C31255D467000A5E77F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B3E29167E34009F7A8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B5A291683C1009F7A8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B682916848F009F7A8D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -457,7 +614,6 @@
 				62F315EB27A186F0003D2906 /* Task.swift in Sources */,
 				6267B87C26A07017009A31B1 /* UIApplication.swift in Sources */,
 				620F6A39250BB78200B10032 /* String.swift in Sources */,
-				622E8B3A29167B79009F7A8D /* OpenInSafari.swift in Sources */,
 				62D6CDF2255C002B00ABD216 /* URLRequest.swift in Sources */,
 				62BFAA94273ECDE600DAC879 /* Gradient.swift in Sources */,
 				6206C951256D6FF8003F3A67 /* URLSession.swift in Sources */,
@@ -465,7 +621,6 @@
 				62EC880526F8DACE00211A6A /* Locale.swift in Sources */,
 				620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */,
 				625380822594CE9B00C58B2F /* Double.swift in Sources */,
-				622E8B3829167B14009F7A8D /* OnFirstAppear.swift in Sources */,
 				62018FE725DEB40F002B71A5 /* AsyncOperation.swift in Sources */,
 				62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */,
 				6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */,
@@ -508,6 +663,31 @@
 				621B3C2C255D467000A5E77F /* Decodable.swift in Sources */,
 				621136ED255D5CAC003F8FBF /* DJSwiftHelpers.swift in Sources */,
 				62EC880626F8DACE00211A6A /* Locale.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B3C29167E34009F7A8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622E8B4829167E57009F7A8D /* OpenInSafari.swift in Sources */,
+				622E8B4729167E54009F7A8D /* OnFirstAppear.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B58291683C1009F7A8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622E8B63291683EF009F7A8D /* OnFirstAppear.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622E8B662916848F009F7A8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622E8B7329168572009F7A8D /* OnFirstAppear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +794,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -672,7 +852,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -698,7 +878,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,7 +907,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -755,7 +935,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -785,7 +965,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -800,11 +980,208 @@
 			};
 			name = Release;
 		};
+		622E8B4429167E34009F7A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Dappological Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		622E8B4529167E34009F7A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Dappological Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		622E8B61291683C1009F7A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Dappological Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-SwiftUI-MacOS";
+				PRODUCT_NAME = DJSwiftHelpers_SwiftUI;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		622E8B62291683C1009F7A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Dappological Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-SwiftUI-MacOS";
+				PRODUCT_NAME = DJSwiftHelpers_SwiftUI;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		622E8B6F2916848F009F7A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Dappological Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-SwiftUI-WatchOS";
+				PRODUCT_NAME = DJSwiftHelpers_SwiftUI;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		622E8B702916848F009F7A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Dappological Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-SwiftUI-WatchOS";
+				PRODUCT_NAME = DJSwiftHelpers_SwiftUI;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
 		6266548325F2765C00696303 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WVY7N532MY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -812,12 +1189,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers_MacOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-MacOS";
 				PRODUCT_NAME = DJSwiftHelpers;
 				SDKROOT = macosx;
@@ -831,6 +1209,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WVY7N532MY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -838,12 +1217,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers_MacOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dappological.DJSwiftHelpers-MacOS";
 				PRODUCT_NAME = DJSwiftHelpers;
 				SDKROOT = macosx;
@@ -865,6 +1245,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -894,6 +1275,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJSwiftHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -936,6 +1318,33 @@
 			buildConfigurations = (
 				621B3C33255D467000A5E77F /* Debug */,
 				621B3C34255D467000A5E77F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		622E8B4629167E34009F7A8D /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622E8B4429167E34009F7A8D /* Debug */,
+				622E8B4529167E34009F7A8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		622E8B60291683C1009F7A8D /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_SwiftUI_MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622E8B61291683C1009F7A8D /* Debug */,
+				622E8B62291683C1009F7A8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		622E8B6E2916848F009F7A8D /* Build configuration list for PBXNativeTarget "DJSwiftHelpers_SwiftUI_WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622E8B6F2916848F009F7A8D /* Debug */,
+				622E8B702916848F009F7A8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
