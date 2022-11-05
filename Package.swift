@@ -19,6 +19,10 @@ let package = Package(
         .library(
             name: "DJSwiftHelpers_UIKit",
             targets: ["DJSwiftHelpers_UIKit"]
+        ),
+        .library(
+            name: "DJSwiftHelpers_SwiftUI",
+            targets: ["DJSwiftHelpers_SwiftUI"]
         )
     ],
     targets: [
@@ -34,6 +38,10 @@ let package = Package(
         .target(
             name: "DJSwiftHelpers_UIKit",
             path: "Sources/Non_Extension/"
+        ),
+        .target(
+            name: "DJSwiftHelpers_SwiftUI",
+            path: "Sources/SwiftUI/"
         )
     ]
 )

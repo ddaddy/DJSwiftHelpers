@@ -1,9 +1,9 @@
 //
-//  UIActivity.swift
+//  OpenInSafari.swift
 //  DJSwiftHelpers
 //
-//  Created by Darren Jones on 08/10/2021.
-//  Copyright © 2021 Dappological Ltd. All rights reserved.
+//  Created by Darren Jones on 05/11/2022.
+//  Copyright © 2022 Dappological Ltd. All rights reserved.
 //
 
 #if os(iOS)
@@ -62,7 +62,7 @@ struct SafariActivityView: UIViewControllerRepresentable {
  A `UIActivity` that adds an `Open in Safari` activity to a share sheet.
  */
 @available(iOS 13, *)
-public
+private
 class SafariActivity: UIActivity {
     
     public var url: URL?

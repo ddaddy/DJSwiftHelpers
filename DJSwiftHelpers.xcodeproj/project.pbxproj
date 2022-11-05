@@ -28,6 +28,8 @@
 		6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C425ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C525ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
+		622E8B3829167B14009F7A8D /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3729167B14009F7A8D /* OnFirstAppear.swift */; };
+		622E8B3A29167B79009F7A8D /* OpenInSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3929167B79009F7A8D /* OpenInSafari.swift */; };
 		6241494328F338EB00161522 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6241494228F338EB00161522 /* NSMutableAttributedString.swift */; };
 		625380722594BCE900C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
 		625380762594BDDD00C58B2F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */; };
@@ -83,7 +85,6 @@
 		62DF50AD256E9AA800C88FF7 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C950256D6FF8003F3A67 /* URLSession.swift */; };
 		62DF50B1256E9AAA00C88FF7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6A4D250BBCE900B10032 /* UserDefaults.swift */; };
 		62DF50B5256E9AAD00C88FF7 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6CDE8255BFCCB00ABD216 /* Decodable.swift */; };
-		62E392382710620F008C9C89 /* UIActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E392372710620F008C9C89 /* UIActivity.swift */; };
 		62EC880526F8DACE00211A6A /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC880426F8DACE00211A6A /* Locale.swift */; };
 		62EC880626F8DACE00211A6A /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC880426F8DACE00211A6A /* Locale.swift */; };
 		62EC880726F8DACE00211A6A /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC880426F8DACE00211A6A /* Locale.swift */; };
@@ -105,6 +106,8 @@
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		621B3C35255D467000A5E77F /* DJSwiftHelpers_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		622E8B3729167B14009F7A8D /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
+		622E8B3929167B79009F7A8D /* OpenInSafari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInSafari.swift; sourceTree = "<group>"; };
 		6241494228F338EB00161522 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		625380712594BCE900C58B2F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		625380812594CE9B00C58B2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -130,7 +133,6 @@
 		62D6CDF1255C002B00ABD216 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		62DEDA482636D40A00771544 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		62DF505D256E99DB00C88FF7 /* DJSwiftHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62E392372710620F008C9C89 /* UIActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivity.swift; sourceTree = "<group>"; };
 		62EC880426F8DACE00211A6A /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 		62F315EA27A186F0003D2906 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 		620F6A1C250BB75500B10032 = {
 			isa = PBXGroup;
 			children = (
+				622E8B36291679A8009F7A8D /* SwiftUI */,
 				6267B87626A07017009A31B1 /* Non_Extension */,
 				620F6A31250BB76900B10032 /* Common */,
 				620F6A28250BB75500B10032 /* DJSwiftHelpers */,
@@ -223,6 +226,16 @@
 			path = Sources/Common;
 			sourceTree = "<group>";
 		};
+		622E8B36291679A8009F7A8D /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				622E8B3729167B14009F7A8D /* OnFirstAppear.swift */,
+				622E8B3929167B79009F7A8D /* OpenInSafari.swift */,
+			);
+			name = SwiftUI;
+			path = Sources/SwiftUI;
+			sourceTree = "<group>";
+		};
 		6266547F25F2765C00696303 /* DJSwiftHelpers_MacOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +250,6 @@
 			children = (
 				62BFAA93273ECDE600DAC879 /* Gradient.swift */,
 				6241494228F338EB00161522 /* NSMutableAttributedString.swift */,
-				62E392372710620F008C9C89 /* UIActivity.swift */,
 				6267B87826A07017009A31B1 /* UIApplication.swift */,
 				6278E8432861A8590004DF29 /* UIColor.swift */,
 				6278E8492861A8590004DF29 /* UIDevice.swift */,
@@ -445,6 +457,7 @@
 				62F315EB27A186F0003D2906 /* Task.swift in Sources */,
 				6267B87C26A07017009A31B1 /* UIApplication.swift in Sources */,
 				620F6A39250BB78200B10032 /* String.swift in Sources */,
+				622E8B3A29167B79009F7A8D /* OpenInSafari.swift in Sources */,
 				62D6CDF2255C002B00ABD216 /* URLRequest.swift in Sources */,
 				62BFAA94273ECDE600DAC879 /* Gradient.swift in Sources */,
 				6206C951256D6FF8003F3A67 /* URLSession.swift in Sources */,
@@ -452,11 +465,11 @@
 				62EC880526F8DACE00211A6A /* Locale.swift in Sources */,
 				620F6A4E250BBCE900B10032 /* UserDefaults.swift in Sources */,
 				625380822594CE9B00C58B2F /* Double.swift in Sources */,
+				622E8B3829167B14009F7A8D /* OnFirstAppear.swift in Sources */,
 				62018FE725DEB40F002B71A5 /* AsyncOperation.swift in Sources */,
 				62D6CDEF255BFFA300ABD216 /* URLResponse.swift in Sources */,
 				6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */,
 				62D6CDEC255BFDA900ABD216 /* Date.swift in Sources */,
-				62E392382710620F008C9C89 /* UIActivity.swift in Sources */,
 				62DEDA492636D40A00771544 /* FileManager.swift in Sources */,
 				62754BA625E691E200F2F489 /* Codable.swift in Sources */,
 				6267B87926A07017009A31B1 /* UIWindow.swift in Sources */,
