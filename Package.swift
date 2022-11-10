@@ -30,20 +30,24 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "DJSwiftHelpers",
-            path: "Sources/Common/"
+            path: "Sources/Common/",
+            linkerSettings: [
+                .unsafeFlags(["-Xlinker", "-no_application_extension"])
+            ]
         ),
         .target(
             name: "DJSwiftHelpers_UIKit",
             path: "Sources/UIKit/",
             linkerSettings: [
-                .linkedFramework("UIKit", .when(platforms: [.iOS]))
+                .linkedFramework("UIKit", .when(platforms: [.iOS])),
             ]
         ),
         .target(
             name: "DJSwiftHelpers_SwiftUI",
             path: "Sources/SwiftUI/",
             linkerSettings: [
-                .linkedFramework("SwiftUI")
+                .linkedFramework("SwiftUI"),
+                .unsafeFlags(["-Xlinker", "-no_application_extension"])
             ]
         )
     ]
