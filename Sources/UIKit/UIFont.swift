@@ -6,9 +6,10 @@
 //  Copyright © 2021 Dappological Ltd. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
-@available(iOS 11.0, *)
+@available(iOS 11.0, macCatalyst 13.1, tvOS 11.0, watchOS 4.0, *)
 public
 extension UIFont {
     
@@ -30,3 +31,4 @@ extension UIFont {
         return metrics.scaledFont(for: font)
     }
 }
+#endif

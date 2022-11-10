@@ -6,8 +6,10 @@
 //  Copyright © 2020 Darren Jones. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
+@available(iOS 2.0, macCatalyst 13.1, tvOS 9.0, watchOS 2.0, *)
 public
 extension UIColor {
     
@@ -44,6 +46,7 @@ extension UIColor {
     }
 }
 
+@available(iOS 2.0, macCatalyst 13.1, tvOS 9.0, watchOS 2.0, *)
 public
 extension UIColor {
     
@@ -55,3 +58,4 @@ extension UIColor {
         return getRed(&r, green: &g, blue: &b, alpha: &a) ? UIColor(red: 1.0-r, green: 1.0-g, blue: 1.0-b, alpha: a) : .black
     }
 }
+#endif

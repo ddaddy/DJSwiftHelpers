@@ -6,6 +6,7 @@
 //  Copyright © 2022 Dappological Ltd. All rights reserved.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, watchOS 6.0, *)
@@ -41,3 +42,4 @@ struct FirstAppear: ViewModifier {
         }
     }
 }
+#endif

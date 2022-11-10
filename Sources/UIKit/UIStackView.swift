@@ -6,8 +6,11 @@
 //  Copyright © 2020 Darren Jones. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
+#if !os(watchOS)
+@available(iOS 9.0, macCatalyst 13.1, tvOS 9.0, *)
 public
 extension UIStackView {
     
@@ -30,6 +33,7 @@ extension UIStackView {
     }
 }
 
+@available(iOS 9.0, macCatalyst 13.1, tvOS 9.0, *)
 public
 extension UIStackView {
     
@@ -43,3 +47,5 @@ extension UIStackView {
         insertSubview(subView, at: 0)
     }
 }
+#endif
+#endif

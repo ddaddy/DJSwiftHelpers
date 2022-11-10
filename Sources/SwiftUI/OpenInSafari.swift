@@ -6,6 +6,7 @@
 //  Copyright © 2022 Dappological Ltd. All rights reserved.
 //
 
+#if canImport(SwiftUI)
 #if os(iOS)
 // SwiftUI isn't available in the armv7 architecture
 #if arch(arm64) || arch(x86_64)
@@ -120,3 +121,4 @@ class SafariActivity: UIActivity {
 }
 #endif // arch(arm64) || arch(x86_64)
 #endif // os(iOS)
+#endif // canImport(SwiftUI)

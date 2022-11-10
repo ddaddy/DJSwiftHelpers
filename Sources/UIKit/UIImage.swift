@@ -6,8 +6,10 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
+@available(iOS 2.0, macCatalyst 13.1, tvOS 9.0, watchOS 2.0, *)
 public
 extension UIImage {
     
@@ -47,6 +49,8 @@ extension UIImage {
     }
 }
 
+#if !os(watchOS)
+@available(iOS 2.0, macCatalyst 13.1, tvOS 9.0, *)
 public
 extension UIImage {
     
@@ -76,3 +80,6 @@ extension UIImage {
         return newImage!
     }
 }
+#endif
+
+#endif
