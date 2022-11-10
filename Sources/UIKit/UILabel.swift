@@ -6,7 +6,6 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 public
@@ -54,4 +53,3 @@ extension UILabel {
         }
     }
 }
-#endif // os(iOS)

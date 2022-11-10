@@ -6,7 +6,6 @@
 //  Copyright © 2020 Darren Jones. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 public
@@ -44,4 +43,3 @@ extension UIStackView {
         insertSubview(subView, at: 0)
     }
 }
-#endif // os(iOS)

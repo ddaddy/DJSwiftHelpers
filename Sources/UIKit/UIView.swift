@@ -6,7 +6,6 @@
 //  Copyright © 2021 Dappological Ltd. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 public
@@ -75,4 +74,3 @@ extension UIView {
         }
     }
 }
-#endif // os(iOS)

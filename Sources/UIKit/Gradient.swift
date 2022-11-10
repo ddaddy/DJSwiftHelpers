@@ -6,7 +6,6 @@
 //  Copyright © 2021 Dappological Ltd. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 /**
@@ -61,4 +60,3 @@ open class Gradient: UIView {
         updateColors()
     }
 }
-#endif

@@ -6,7 +6,6 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 public
@@ -34,7 +33,6 @@ extension UIImage {
         return true
     }
     
-#if !IS_EXTENSION
     /**
      Saves a `UIImage` to the temporary directory as a `.png` and returns the URL
      - Parameters:
@@ -47,7 +45,6 @@ extension UIImage {
         guard self.saveAsPNG(path: url) else { return nil }
         return url
     }
-#endif
 }
 
 public
@@ -79,4 +76,3 @@ extension UIImage {
         return newImage!
     }
 }
-#endif // os(iOS)

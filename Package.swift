@@ -6,23 +6,15 @@ import PackageDescription
 let package = Package(
     name: "DJSwiftHelpers",
     platforms: [
-        .macOS(.v10_11),
-        .iOS(.v9),
-        .watchOS(.v2)
+        .macOS(.v10_13),
+        .iOS(.v12),
+        .watchOS(.v4)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "DJSwiftHelpers",
-            targets: ["DJSwiftHelpers"]
-        ),
-        .library(
-            name: "DJSwiftHelpers_UIKit",
-            targets: ["DJSwiftHelpers_UIKit"]
-        ),
-        .library(
-            name: "DJSwiftHelpers_SwiftUI",
-            targets: ["DJSwiftHelpers_SwiftUI"]
+            targets: ["DJSwiftHelpers", "DJSwiftHelpers_UIKit", "DJSwiftHelpers_SwiftUI"]
         )
     ],
     targets: [
@@ -34,11 +26,17 @@ let package = Package(
         ),
         .target(
             name: "DJSwiftHelpers_UIKit",
-            path: "Sources/Non_Extension/"
+            path: "Sources/UIKit/",
+            linkerSettings: [
+                .linkedFramework("UIKit", .when(platforms: [.iOS]))
+            ]
         ),
         .target(
             name: "DJSwiftHelpers_SwiftUI",
-            path: "Sources/SwiftUI/"
+            path: "Sources/SwiftUI/",
+            linkerSettings: [
+                .linkedFramework("SwiftUI")
+            ]
         )
     ]
 )

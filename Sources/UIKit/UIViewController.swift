@@ -6,7 +6,6 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 public
@@ -71,4 +70,3 @@ extension UIViewController {
         child.removeFromParent()
     }
 }
-#endif // os(iOS)

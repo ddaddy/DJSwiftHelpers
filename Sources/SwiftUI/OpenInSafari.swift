@@ -12,7 +12,6 @@
 import UIKit
 import SwiftUI
 
-#if !IS_EXTENSION
 /**
  A SwiftUI view to display the share sheet with `Open in Safari`
  
@@ -119,6 +118,5 @@ class SafariActivity: UIActivity {
         }
     }
 }
-#endif // !IS_EXTENSION
 #endif // arch(arm64) || arch(x86_64)
 #endif // os(iOS)

@@ -6,10 +6,8 @@
 //  Copyright © 2020 Dappological Ltd. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
-#if !IS_EXTENSION
 public
 extension UIApplication {
     
@@ -62,5 +60,3 @@ extension UIApplication {
         UIWindow.key?.rootViewController?.dismiss(animated: animated, completion: completion)
     }
 }
-#endif // !IS_EXTENSION
-#endif // os(iOS)

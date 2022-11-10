@@ -6,10 +6,8 @@
 //  Copyright © 2022 Dappological Ltd. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
-#if !IS_EXTENSION
 public
 extension NSMutableAttributedString {
     
@@ -24,5 +22,3 @@ extension NSMutableAttributedString {
         self.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
     }
 }
-#endif // !IS_EXTENSION
-#endif // os(iOS)

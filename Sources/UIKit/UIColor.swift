@@ -6,7 +6,6 @@
 //  Copyright © 2020 Darren Jones. All rights reserved.
 //
 
-#if os(iOS) || os(watchOS)
 import UIKit
 
 public
@@ -56,4 +55,3 @@ extension UIColor {
         return getRed(&r, green: &g, blue: &b, alpha: &a) ? UIColor(red: 1.0-r, green: 1.0-g, blue: 1.0-b, alpha: a) : .black
     }
 }
-#endif // os(iOS) || os(watchOS)
