@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "DJSwiftHelpers",
     platforms: [
-        .macOS(.v10_13),
-        .iOS(.v12),
+        .macOS(.v10_11),
+        .iOS(.v9),
         .watchOS(.v4)
     ],
     products: [
