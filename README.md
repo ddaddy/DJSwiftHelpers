@@ -308,6 +308,14 @@ Dismiss back to the root view controller
 class dismisstoRoot(animated:Bool, completion:(() -> Void)? = nil)
 ```
 
+### UIButton
+
+Add an underline style to the title label
+
+```swift
+underlineText()
+```
+
 ### UIColor
 Convert a hex string to a `UIColor`
 

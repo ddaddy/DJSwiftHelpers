@@ -28,6 +28,7 @@
 		6220B4C325ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C425ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
 		6220B4C525ADDDC40064B9EB /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220B4C225ADDDC40064B9EB /* Collection.swift */; };
+		622D636F2948986E0050C770 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622D636E2948986E0050C770 /* UIButton.swift */; };
 		622E8B4729167E54009F7A8D /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3729167B14009F7A8D /* OnFirstAppear.swift */; };
 		622E8B4829167E57009F7A8D /* OpenInSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E8B3929167B79009F7A8D /* OpenInSafari.swift */; };
 		622E8B4A2916818A009F7A8D /* DJSwiftHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 622E8B492916818A009F7A8D /* DJSwiftHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,6 +112,7 @@
 		620F6A4D250BBCE900B10032 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		621B3C35255D467000A5E77F /* DJSwiftHelpers_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6220B4C225ADDDC40064B9EB /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		622D636E2948986E0050C770 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		622E8B3729167B14009F7A8D /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
 		622E8B3929167B79009F7A8D /* OpenInSafari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInSafari.swift; sourceTree = "<group>"; };
 		622E8B4029167E34009F7A8D /* DJSwiftHelpers_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJSwiftHelpers_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,6 +299,7 @@
 				62BFAA93273ECDE600DAC879 /* Gradient.swift */,
 				6241494228F338EB00161522 /* NSMutableAttributedString.swift */,
 				6267B87826A07017009A31B1 /* UIApplication.swift */,
+				622D636E2948986E0050C770 /* UIButton.swift */,
 				6278E8432861A8590004DF29 /* UIColor.swift */,
 				6278E8492861A8590004DF29 /* UIDevice.swift */,
 				6278E8472861A8590004DF29 /* UIFont.swift */,
@@ -639,6 +642,7 @@
 				621B3C21255D467000A5E77F /* String.swift in Sources */,
 				62843F2B291CFE16004DEA0E /* UIColor.swift in Sources */,
 				62843F32291CFE16004DEA0E /* NSMutableAttributedString.swift in Sources */,
+				622D636F2948986E0050C770 /* UIButton.swift in Sources */,
 				62843F2D291CFE16004DEA0E /* UIFont.swift in Sources */,
 				62843F2F291CFE16004DEA0E /* UIApplication.swift in Sources */,
 				62843F29291CFE16004DEA0E /* UIDevice.swift in Sources */,
