@@ -102,6 +102,17 @@ subscript(safe index: Index) -> Element?
 ```
 
 ### Date
+Create a `Date` from some date elements
+```swift
+Date.from(year: Int, month: Int, day: Int) -> Date?
+```
+
+Create a `Date` from a date string. Be careful using this because `DateFormatter`'s can be
+     very expensive for performance.
+```swift
+Date.parse(_ string: String, format: String = "yyyy-MM-dd") -> Date?
+```
+
 Adds additional seconds or minutes to a `Date`
 
 ```swift
