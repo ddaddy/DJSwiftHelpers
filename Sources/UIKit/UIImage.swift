@@ -40,6 +40,7 @@ extension UIImage {
      - Parameters:
         - named: The filename to use (`.png` will automatically be appended)
      */
+    @available(iOS 10.0, macCatalyst 13.1, tvOS 10.0, watchOS 3.0, *)
     func tempURLForImage(named name: String) -> URL? {
         
         let fileManager = FileManager.default
