@@ -146,6 +146,26 @@ var iso8601: Date?
 var iso8601withFractionalSeconds: Date?
 ```
 
+### Decodable
+##### UnkeyedDecodingContainer
+Skips to the next container whilst iterating over an unkeyed decoding container using `while !container.isAtEnd { }`
+
+```swift
+skip()
+```
+
+##### @Flexible
+Property wrapper that allows a `Decodable` `var` to be decoded from either a `String` or an `Int`
+
+```swift
+struct GeneralProduct: Decodable {
+	var price: Double
+	// These can be decoded from either String or Int
+	@Flexible var intId: Int
+	@Flexible var stringId: String
+}
+```
+
 ### Double
 Round doubles for less accurate comparisons
 
@@ -439,13 +459,6 @@ Fetches the key window
 
 ```swift
 var key: UIWindow?
-```
-
-### UnkeyedDecodingContainer
-Skips to the next container whilst iterating over an unkeyed decoding container using `while !container.isAtEnd { }`
-
-```swift
-skip()
 ```
 
 ### URLRequest

@@ -67,3 +67,55 @@ struct Throwable<T: Decodable>: Decodable {
         result = Result(catching: { try T(from: decoder) })
     }
 }
+
+/**
+ Property wrapper that allows a `Decodable` `var` to be decoded from either a `String` or an `Int`.
+ Useful when decoding `JSON` that might sometimes send a `String` instead of an `Int`.
+ 
+ ```
+ struct GeneralProduct: Decodable {
+     var price: Double
+     @Flexible var intId: Int // This can be decoded from either String or Int
+     @Flexible var stringId: String // This can be decoded from either String or Int
+ }
+ ```
+ [](https://stackoverflow.com/questions/47935705/using-codable-with-value-that-is-sometimes-an-int-and-other-times-a-string)
+ */
+@propertyWrapper
+public
+struct Flexible<T: FlexibleDecodable>: Decodable {
+    public var wrappedValue: T
+    
+    public init(from decoder: Decoder) throws {
+        wrappedValue = try T(container: decoder.singleValueContainer())
+    }
+}
+
+public
+protocol FlexibleDecodable {
+    init(container: SingleValueDecodingContainer) throws
+}
+
+extension String: FlexibleDecodable {
+    public init(container: SingleValueDecodingContainer) throws {
+        if let string = try? container.decode(String.self) {
+            self = string
+        } else if let int = try? container.decode(Int.self) {
+            self = String(int)
+        } else {
+            throw DecodingError.dataCorrupted(.init(codingPath: container.codingPath, debugDescription: "Invalid string value"))
+        }
+    }
+}
+
+extension Int: FlexibleDecodable {
+    public init(container: SingleValueDecodingContainer) throws {
+        if let int = try? container.decode(Int.self) {
+            self = int
+        } else if let string = try? container.decode(String.self), let int = Int(string) {
+            self = int
+        } else {
+            throw DecodingError.dataCorrupted(.init(codingPath: container.codingPath, debugDescription: "Invalid int value"))
+        }
+    }
+}
