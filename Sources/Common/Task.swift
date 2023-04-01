@@ -8,7 +8,7 @@
 
 import Foundation
 
-@available(macOS 10.15, iOS 13.0, watchOSApplicationExtension 6.0, *)
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, watchOSApplicationExtension 6.0, *)
 public
 extension Task where Failure == Error {
     
