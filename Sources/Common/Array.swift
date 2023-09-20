@@ -136,3 +136,39 @@ extension Array {
         }
     }
 }
+
+#if canImport(Combine)
+import Combine
+
+@available(iOS 13.0, watchOS 6.0, macOS 10.15, *)
+public
+extension Array where Element: ObservableObject {
+    
+    /// Adds a listener to array elements
+    /// - Parameters:
+    ///     - cancellables: An `Array` of `AnyCancellable`'s to hold the strong reference to listeners
+    ///     - change: A closure that is triggered whenever an element in the array has been updated by firing `objectWillChange`
+    ///
+    /// As arrays containing class objects do not trigger any kind of update if an element
+    /// updates one of it's variables, we need to attach a listener to every element of the array.
+    /// The listener needs a strong reference, so you must pass in an array to hold them.
+    ///
+    /// Example:
+    /// ```swift
+    /// var cancellables = [AnyCancellable]()
+    /// array.elementChangeListener(cancellables: &cancellables) { element in
+    ///     // Do something when an array element changes
+    /// }
+    /// ```
+    func elementChangeListener(cancellables: inout [AnyCancellable], change: @escaping (Element)->()) {
+        
+        cancellables.removeAll()
+        forEach { element in
+            let c = element.objectWillChange.sink { _ in
+                change(element)
+            }
+            cancellables.append(c)
+        }
+    }
+}
+#endif

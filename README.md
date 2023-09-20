@@ -86,6 +86,12 @@ Example:
 .uniques(by: \.firstName, and: \.surname)
 ```
 
+Adds a listener to array elements
+
+```swift
+elementChangeListener(cancellables: inout [AnyCancellable], change: @escaping (Element)->())
+```
+
 ### CLLocationCoordinate2D
 Determine if a location is within a bounding rect
 
