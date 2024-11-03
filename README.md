@@ -523,6 +523,25 @@ Example:
 )
 ```
 
+### ActivityView
+
+A `UIActivityViewController` used to present a Share Sheet
+
+```swift
+Example:
+
+struct ShareItem: Identifiable {
+    let id = UUID()
+    let data: Data
+}
+
+SomeView()
+    .sheet(item: $shareItem) { shareItem in
+        ActivityView(item: shareItem.data)
+            .presentationDetents([.medium])
+    }
+```
+
 ### .onFirstAppear
 
 A SwiftUI view modifier that executes a block of code only once during the first display of the view
