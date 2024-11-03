@@ -510,6 +510,16 @@ func resetDefaults()
 ```
 
 ## SwiftUI
+### NavigationStackPre16
+
+A backward compatible `NavigationStack`
+
+```swift
+NavigationStackPre16() {
+	SomeRootView()
+}
+```
+
 ### SafariActivityView
 
 A SwiftUI view to display the share sheet with `Open in Safari`
