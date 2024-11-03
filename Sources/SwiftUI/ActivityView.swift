@@ -25,6 +25,11 @@ import SwiftUI
 /// ```
 @available(iOS 13.0, *)
 public struct ActivityView: UIViewControllerRepresentable {
+    
+    public init(item: Any) {
+        self.item = item
+    }
+    
     let item: Any
 
     public func makeUIViewController(context: UIViewControllerRepresentableContext<ActivityView>) -> UIActivityViewController {
