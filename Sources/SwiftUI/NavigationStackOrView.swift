@@ -12,7 +12,7 @@ import SwiftUI
 @available(iOS 13.0, *)
 public struct NavigationStackPre16<Root>: View where Root: View {
     
-    public init(root: @escaping () -> Root) {
+    public init(@ViewBuilder root: @escaping () -> Root) {
         self.root = root
     }
     
