@@ -18,7 +18,7 @@ import Foundation
  [Thanks to SwiftLee](https://www.avanderlee.com/swift/asynchronous-operations/)
  */
 open
-class AsyncOperation: Operation {
+class AsyncOperation: Operation, @unchecked Sendable {
     private let lockQueue = DispatchQueue(label: "com.djswifthelpers.asyncoperation", attributes: .concurrent)
 
     public override var isAsynchronous: Bool {
