@@ -1,20 +1,18 @@
 //
-//  UIColor.swift
-//  Commute
+//  File.swift
+//  DJSwiftHelpers
 //
-//  Created by Darren Jones on 10/09/2020.
-//  Copyright © 2020 Darren Jones. All rights reserved.
+//  Created by Darren Jones on 05/11/2024.
 //
 
-#if canImport(UIKit)
-import UIKit
+#if canImport(AppKit)
+import AppKit
 
-@available(iOS 2.0, macCatalyst 13.1, tvOS 9.0, watchOS 2.0, *)
 public
-extension UIColor {
+extension NSColor {
     
     /**
-     Converts a hex string to a `UIColor`
+     Converts a hex string to a `NSColor`
      - Parameters:
         - hex: Must be a 7 or 9 digit string starting with # representing #rrggbbaa
      - Use alpha bits ff for full alpha
@@ -22,7 +20,7 @@ extension UIColor {
     convenience init?(hex: String) {
         var hex = hex
         if hex.count == 7 { hex.append("FF") }
-
+        
         if hex.hasPrefix("#") {
             let start = hex.index(hex.startIndex, offsetBy: 1)
             let hexColor = String(hex[start...])
@@ -48,16 +46,4 @@ extension UIColor {
     }
 }
 
-@available(iOS 2.0, macCatalyst 13.1, tvOS 9.0, watchOS 2.0, *)
-public
-extension UIColor {
-    
-    /**
-     Returns a UIColor that is the best opposite of another colour
-     */
-    var inverted: UIColor {
-        var a: CGFloat = 0.0, r: CGFloat = 0.0, g: CGFloat = 0.0, b: CGFloat = 0.0
-        return getRed(&r, green: &g, blue: &b, alpha: &a) ? UIColor(red: 1.0-r, green: 1.0-g, blue: 1.0-b, alpha: a) : .black
-    }
-}
 #endif

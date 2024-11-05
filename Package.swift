@@ -23,6 +23,10 @@ let package = Package(
         .library(
             name: "DJSwiftHelpers_UIKit",
             targets: ["DJSwiftHelpers_UIKit"]
+        ),
+        .library(
+            name: "DJSwiftHelpers_AppKit",
+            targets: ["DJSwiftHelpers_AppKit"]
         )
     ],
     targets: [
@@ -49,6 +53,13 @@ let package = Package(
                 .linkedFramework("SwiftUI"),
                 .unsafeFlags(["-Xlinker", "-no_application_extension"])
             ]
-        )
+        ),
+        .target(
+            name: "DJSwiftHelpers_AppKit",
+            path: "Sources/AppKit/",
+            linkerSettings: [
+                .linkedFramework("AppKit", .when(platforms: [.macOS])),
+            ]
+        ),
     ]
 )
