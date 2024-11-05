@@ -7,6 +7,7 @@
 
 #if canImport(SwiftUI)
 #if canImport(UIKit)
+#if !os(watchOS)
 import SwiftUI
 
 /// A `UIActivityViewController` used to present a Share Sheet
@@ -39,5 +40,6 @@ public struct ActivityView: UIViewControllerRepresentable {
 
     public func updateUIViewController(_ uiViewController: UIActivityViewController, context: UIViewControllerRepresentableContext<ActivityView>) {}
 }
+#endif
 #endif
 #endif

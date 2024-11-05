@@ -55,16 +55,19 @@ extension UIImage {
 public
 extension UIImage {
     
+    @MainActor
     func resize(width: CGFloat) -> UIImage {
         let height = (width/self.size.width)*self.size.height
         return self.resize(size: CGSize(width: width, height: height))
     }
     
+    @MainActor
     func resize(height: CGFloat) -> UIImage {
         let width = (height/self.size.height)*self.size.width
         return self.resize(size: CGSize(width: width, height: height))
     }
     
+    @MainActor
     func resize(size: CGSize) -> UIImage {
         let widthRatio  = size.width/self.size.width
         let heightRatio = size.height/self.size.height

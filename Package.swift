@@ -42,6 +42,9 @@ let package = Package(
         .target(
             name: "DJSwiftHelpers_UIKit",
             path: "Sources/UIKit/",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ],
             linkerSettings: [
                 .linkedFramework("UIKit", .when(platforms: [.iOS])),
             ]
@@ -49,6 +52,9 @@ let package = Package(
         .target(
             name: "DJSwiftHelpers_SwiftUI",
             path: "Sources/SwiftUI/",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ],
             linkerSettings: [
                 .linkedFramework("SwiftUI"),
                 .unsafeFlags(["-Xlinker", "-no_application_extension"])

@@ -9,7 +9,7 @@
 import SwiftUI
 
 /// Backward compatible `NavigationStack`
-@available(iOS 13.0, macOS 10.15, *)
+@available(iOS 13.0, macOS 10.15, watchOS 7.0, *)
 public struct NavigationStackPre16<Root>: View where Root: View {
     
     public init(@ViewBuilder root: @escaping () -> Root) {
@@ -19,7 +19,7 @@ public struct NavigationStackPre16<Root>: View where Root: View {
     @ViewBuilder let root: () -> Root
     
     public var body: some View {
-        if #available(iOS 16.0, macOS 13.0, *) {
+        if #available(iOS 16.0, macOS 13.0, watchOS 9.0, *) {
             NavigationStack(root: root)
         } else {
             NavigationView(content: root)

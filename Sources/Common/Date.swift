@@ -82,8 +82,7 @@ extension ISO8601DateFormatter {
     }
 }
 
-public
-extension Formatter {
+extension Formatter: @unchecked @retroactive Sendable {
     
     @available(iOS 10, *)
     @available(watchOS 3.0, *)

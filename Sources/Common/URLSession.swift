@@ -13,7 +13,7 @@ import Foundation
 public
 extension URLSession {
     
-    static var selfSignedSSLSession:URLSession = SelfSignedURLSession().session
+    static let selfSignedSSLSession:URLSession = SelfSignedURLSession().session
     static func selfSignedSSLSession(config: URLSessionConfiguration) -> URLSession {
         return SelfSignedURLSession(config: config).session
     }
@@ -22,9 +22,9 @@ extension URLSession {
 @available(iOS 10.3, *)
 @available(watchOS 3.3, *)
 fileprivate
-class SelfSignedURLSession:NSObject, URLSessionDelegate {
+final class SelfSignedURLSession:NSObject, URLSessionDelegate, Sendable {
     
-    public var config: URLSessionConfiguration = .default
+    public let config: URLSessionConfiguration
     
     init(config: URLSessionConfiguration = .default) {
         self.config = config
