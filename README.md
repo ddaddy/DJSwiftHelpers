@@ -416,6 +416,21 @@ Adds an `SFSymbol` image to the beginning or end of a `UILabel`'s text
 addSFSymbol(named:String, position:UILabel.SFSymbolPosition = .beginning, fontWeight weight:UIFont.Weight = .bold, fontDescriptorDesign design:UIFontDescriptor.SystemDesign = .rounded)
 ```
 
+### UInt64
+Helpers to use with `Task.sleep(nanoseconds:)`
+
+```swift
+static let oneSecond: UInt64        = 1_000_000_000
+static let twoSeconds: UInt64       = 2_000_000_000
+static let threeSeconds: UInt64     = 3_000_000_000
+static let fourSeconds: UInt64      = 4_000_000_000
+static let fiveSeconds: UInt64      = 5_000_000_000
+static let tenSeconds: UInt64       = 10_000_000_000
+static let twentySeconds: UInt64    = 20_000_000_000
+static let thirtySeconds: UInt64    = 30_000_000_000
+static let sixtySeconds: UInt64     = 60_000_000_000
+```
+
 ### UIStackView
 Remove and dealloc all subviews from a UIStackView
 
