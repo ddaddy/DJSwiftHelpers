@@ -8,13 +8,14 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, macOS 10.15, watchOS 6.0, *)
 public extension View {
     func hideable(isHidden: Bool) -> some View {
         modifier(Hideable(isHidden: isHidden))
     }
 }
-@available(iOS 13.0, *)
+
+@available(iOS 13.0, macOS 10.15, watchOS 6.0, *)
 public struct Hideable: ViewModifier {
     let isHidden: Bool
     public func body(content: Content) -> some View {
