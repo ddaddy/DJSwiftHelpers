@@ -575,6 +575,14 @@ A SwiftUI view modifier that executes a block of code only once during the first
 .onFirstAppear(_ action: @escaping () -> ()) -> some View
 ```
 
+### .hideable
+
+A SwiftUI view modifier that conditionally hides the view
+
+```swift
+.hideable(isHidden: true)
+```
+
 ## License	
 
 Copyright (c) 2020 Darren Jones (Dappological Ltd.)

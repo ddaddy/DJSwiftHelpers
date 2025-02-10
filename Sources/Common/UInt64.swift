@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UInt64 {
+public extension UInt64 {
     static let oneSecond: UInt64        = 1_000_000_000
     static let twoSeconds: UInt64       = 2_000_000_000
     static let threeSeconds: UInt64     = 3_000_000_000
