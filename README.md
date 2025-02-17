@@ -567,6 +567,18 @@ SomeView()
     }
 ```
 
+### SharingServicePicker
+
+An `NSSharingServicePicker` used to present a Share Sheet on macOS
+
+Example:
+
+```swift
+.background(
+    SharingServicePicker(isPresented: $sharePDF, sharingItems: [pdfURL as Any])
+)
+```
+
 ### .onFirstAppear
 
 A SwiftUI view modifier that executes a block of code only once during the first display of the view
