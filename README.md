@@ -595,6 +595,20 @@ A SwiftUI view modifier that conditionally hides the view
 .hideable(isHidden: true)
 ```
 
+### NSWindow capture/close
+
+A SwiftUI view modifier that captures the hosting `NSWindow`. Useful when closing a specific window.
+
+```swift
+@State private var hostingWindow: NSWindow?
+SomeView()
+	.captureWindow(into: $hostingWindow)
+
+func close() {
+	hostingWindow?.performClose(nil)
+}
+```
+
 ## License	
 
 Copyright (c) 2020 Darren Jones (Dappological Ltd.)
