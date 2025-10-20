@@ -14,7 +14,7 @@ public struct PlatformWindow<Content: View>: Scene {
     let id: String
     let content: () -> Content
 
-    init(_ title: String, id: String = UUID().uuidString, @ViewBuilder content: @escaping () -> Content) {
+    public init(_ title: String, id: String = UUID().uuidString, @ViewBuilder content: @escaping () -> Content) {
         self.title = title
         self.id = id
         self.content = content
