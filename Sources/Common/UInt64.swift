@@ -9,6 +9,8 @@
 import Foundation
 
 public extension UInt64 {
+    static let quarterSecond: UInt64    = 250_000_000
+    static let halfSecond: UInt64       = 500_000_000
     static let oneSecond: UInt64        = 1_000_000_000
     static let twoSeconds: UInt64       = 2_000_000_000
     static let threeSeconds: UInt64     = 3_000_000_000
