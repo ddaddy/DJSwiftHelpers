@@ -9,16 +9,14 @@
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, watchOS 6.0, *)
-public
-extension View {
-    public func glassButtonStyle<Fallback: PrimitiveButtonStyle>(prominent: Bool, fallback: Fallback) -> some View {
+public extension View {
+    func glassButtonStyle<Fallback: PrimitiveButtonStyle>(prominent: Bool, fallback: Fallback) -> some View {
         modifier(GlassButtonStyle(prominent: prominent, fallback: fallback))
     }
 }
 
 @available(iOS 13.0, macOS 10.15, watchOS 6.0, *)
-fileprivate
-struct GlassButtonStyle<Fallback: PrimitiveButtonStyle>: ViewModifier {
+fileprivate struct GlassButtonStyle<Fallback: PrimitiveButtonStyle>: ViewModifier {
     
     let prominent: Bool
     let fallback: Fallback
