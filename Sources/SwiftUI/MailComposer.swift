@@ -30,6 +30,11 @@ import MessageUI
 @available(iOS 13, *)
 public struct MailComposer: UIViewControllerRepresentable {
     
+    public init(result: Binding<Result<MFMailComposeResult, any Error>?>, configure: ((MFMailComposeViewController) -> Void)? = nil) {
+        self._result = result
+        self.configure = configure
+    }
+    
     @Environment(\.presentationMode) private var presentation
     @Binding public var result: Result<MFMailComposeResult, Error>?
     public var configure: ((MFMailComposeViewController) -> Void)?
