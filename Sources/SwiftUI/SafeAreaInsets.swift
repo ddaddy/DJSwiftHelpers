@@ -24,7 +24,6 @@ public extension EnvironmentValues {
 private struct SafeAreaInsetsPreferenceKey: PreferenceKey {
     static var defaultValue: EdgeInsets = .init()
     static func reduce(value: inout EdgeInsets, nextValue: () -> EdgeInsets) {
-        print(#function)
         let n = nextValue()
         value = EdgeInsets(
             top: max(value.top, n.top),
@@ -54,13 +53,9 @@ private struct InjectSafeAreaInsets: ViewModifier {
                                 trailing: proxy.safeAreaInsets.trailing
                             )
                         )
-                        .onAppear {
-                            print(1, proxy.safeAreaInsets)
-                        }
                 }
             )
             .onPreferenceChange(SafeAreaInsetsPreferenceKey.self) {
-                print(3, $0)
                 insets = $0
             }
             .environment(\.safeAreaInsets, insets)
