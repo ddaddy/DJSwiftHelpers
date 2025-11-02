@@ -13,6 +13,8 @@ public extension View {
     
     /// A simple view modifier that allows you to use os specific modifiers
     ///
+    /// - WARNING: Do NOT use if/else with something that can change at runtime unless you don't care about State being destroyed and animation not working!
+    ///
     /// ```swift
     /// Text("")
     ///     .modify {
