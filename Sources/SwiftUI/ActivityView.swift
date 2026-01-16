@@ -28,14 +28,27 @@ import SwiftUI
 @available(iOS 13.0, *)
 public struct ActivityView: UIViewControllerRepresentable {
     
-    public init(item: Any) {
+    public init(item: Any,
+                excludedActivityTypes: [UIActivity.ActivityType]? = nil,
+                completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler? = nil) {
         self.item = item
+        self.excludedActivityTypes = excludedActivityTypes
+        self.completionWithItemsHandler = completionWithItemsHandler
     }
     
     let item: Any
+    let excludedActivityTypes: [UIActivity.ActivityType]?
+    let completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler?
 
     public func makeUIViewController(context: UIViewControllerRepresentableContext<ActivityView>) -> UIActivityViewController {
-        return UIActivityViewController(activityItems: [item], applicationActivities: nil)
+        let activity = UIActivityViewController(activityItems: [item], applicationActivities: nil)
+        if let excludedActivityTypes {
+            activity.excludedActivityTypes = excludedActivityTypes
+        }
+        if let completionWithItemsHandler {
+            activity.completionWithItemsHandler = completionWithItemsHandler
+        }
+        return activity
     }
 
     public func updateUIViewController(_ uiViewController: UIActivityViewController, context: UIViewControllerRepresentableContext<ActivityView>) {}
