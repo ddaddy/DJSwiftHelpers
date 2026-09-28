@@ -11,7 +11,8 @@ import SwiftUI
 @available(iOS 16.0, macOS 13.0, *)
 public extension ToolbarContent {
     
-    @ToolbarContentBuilder public func sharedBackgroundVisibilityBackport(_ visibility: Visibility) -> some ToolbarContent {
+    @inlinable
+    @ToolbarContentBuilder func sharedBackgroundVisibilityBackport(_ visibility: Visibility) -> some ToolbarContent {
         if #available(iOS 26.0, macOS 26.0, *) {
             self.sharedBackgroundVisibility(visibility)
         } else {
